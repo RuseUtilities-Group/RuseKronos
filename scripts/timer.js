@@ -1,4 +1,4 @@
-// By Chris Ahn and Ethan Du Toit
+// By Chris Ahn and Ethan Du Toit and Joshua Koh
 let next = 0;
 let jsonPath = 'Scripts/';
 let times = [];
@@ -50,22 +50,20 @@ function timeStringToMS(timeString) {
 }
 function gen_table(json) {
 	table = document.getElementById("times");
-	console.log(table);
 	tstr = "";
 	it = json.timetableData[dateNamesTo[day()].toLowerCase() + week()];
 	if (it === undefined) {
 		console.log ("Uh oh");
 		it = {};
 	}
-
-	for(const [k, v] of Object.entries(it)) {
+	for(var [k, v] of Object.entries(it)) {
 		tstr += "<tr><td id=\"time1\">";
-		tstr += k;
-		if(addDetails && v.room != "") {
-			tstr += `: ${v.subject}<br><div class="timeSubtext">at ${v.room} with ${v.teacher}<div>`;
+		if(v.room == "Sport"){
+			tstr += `<div class="timeSubtext">${k}: Sport</div>`
+		}else if(addDetails && v.room != "") {
+			tstr += `<div class="timeSubtext">${k}: ${v.subject} with ${v.teacher} - ${v.room}<div>`;
 		}
 		tstr += "</td><td id=\"time2\">";
-		tstr += v.startTime;
 		tstr += "</td></tr>";
 		times.push({periodName: k, timeFrom: timeStringToMS(v.startTime)});
 	}
@@ -83,30 +81,25 @@ function moveDay(json) {
 		//the next period is tomorrow
 		next = 0;
 		times = [];
-		console.log(next, times.length)
 		today.setDate(today.getDate()+1); //tomorrow comes today
 		gen_table(json);
 		updateDay();
 	}
 }
 function update(json) {
-	timer = document.getElementById("timer");
+	periodCountdown = document.getElementById("periodCountdown")
+	periodInfo = document.getElementById("periodInfo")
 	period = document.getElementById("period");
 	moveDay(json);
 	let tt = timeTil();   
 	while (tt < 0) {
-		console.log("iteration");
 		next++;
 		moveDay(json);
 		tt = timeTil();
 	}
-	timer.innerHTML = timeTilHMS();
-	if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject != "") {
-		period.innerHTML = `${times[next].periodName}: ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject}`;
-	}
-	else {
-		period.innerHTML = times[next].periodName;
-	}
+	periodCountdown.innerHTML = `${timeTilHMS()}`
+	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
+	periodInfo.innerHTML = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
 }
 
 let xhr = new XMLHttpRequest();
@@ -120,7 +113,6 @@ xhr.onload = function () {
 		json = JSON.parse(localStorage.getItem("personalTimetable"));
 		addDetails = true;
 	}
-	console.log(json);
 	gen_table(json);
 	updateDay();
 	update(json);

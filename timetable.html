@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="./Styles/main.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="./Styles/images/kronosicon.png" type="image/icon type">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+		<title>Timetable</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168347540-1"></script>
+		<script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-168347540-1');
+		</script>
+		<script type="text/javascript" src="/Scripts/icalParse.js"></script>
+        <script type="text/javascript" src="/Scripts/ical.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./styles/images/kronosIcon.png" alt="logo" style="width:40px;">
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="timetable.html">Timetable</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Utilities
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Calendar</a>
+                  <a class="dropdown-item" href="#">Staff List</a>
+                  <a class="dropdown-item" href="#">Useful Links</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+		<main style="text-align:center">
+			<div class="css-top-inside">
+				<table id="timetable" style="margin-left: 10%">
+				</table>
+			</div>
+			<noscript>Javascript is required for the correct operation of this website. Please enable it for us.</noscript>
+			<script type="text/javascript" src="/Scripts/timetable.js"></script>
+		</main>
+		<!-- <script>console.log("Change Created")</script> -->
+		<footer>
+		</footer>
+	</body>
+</html>

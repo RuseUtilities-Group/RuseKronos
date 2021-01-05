@@ -166,11 +166,11 @@ async function icalProcess() {
 			if(curDay % 5 == 0 && period > 4) {
 				console.log("what")
 			}
-			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].startTime = `${hours}:${minute.toString().padStart(2, '0')}`;
-			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
-			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].teacher = teacher;
-			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].subject = subject;
-			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].room = room;
+			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].startTime = `${hours}:${minute.toString().padStart(2, '0')}`;
+			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
+			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].teacher = teacher;
+			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].subject = subject;
+			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].room = room;
 
 			// console.log(periodStart);
 			// console.log(periodEnd);
@@ -187,7 +187,7 @@ async function icalProcess() {
 		}
 		console.log(jsonData);
 		localStorage.setItem("personalTimetable", JSON.stringify(jsonData));
-		window.location.href = "/timetable.html";
+		window.location.href = "/index.html";
 	} catch(err) {
 		console.log(err);
     }

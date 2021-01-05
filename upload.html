@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="./Styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+		<link rel="icon" href="./Styles/images/kronosicon.jpg" type="image/icon type">
+
+		<title>Upload Timetable</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168347540-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-168347540-1');
+		</script>
+		<script type="text/javascript" src="/Scripts/icalParse.js"></script>
+		<script type="text/javascript" src="/Scripts/ical.js"></script>
+		<script type="text/javascript" src="/Scripts/settingsTheme.js"></script>  
+
+	</head>
+	<body>
+		<main>
+			<div class="upload" style="position: absolute; top: 5%; left: 5%">
+				<div id="outputLOL"> <h4 style="font-size: 30px !important">Upload School Timetable </h4>
+					<p>How to upload your timetable from Sentral:</p>
+					<p>1. Login to <a href="https://jamesruseahs.sentral.com.au/portal/login" target="_blank" class="link">Sentral</a></p>
+					<p>2. Go to the timetable tag on the left side of the page.</p>
+					<p>3. Click "Export as ICal"</p>
+					<p>4. Upload the downloaded file "my_timetable.ics" here.</p>
+					<p>5. Press Submit and you will be directed to a place that shows your timetable.</p>
+					<p>6. You can now enjoy access to staff list and a bell times page that shows your next class.</p>
+
+					<input type="file" id="myFile"/>
+					<input type="button" id="submitButton" value="Submit" onClick="icalProcess()"/>
+
+                </div>
+            </div>
+		</main>
+	</body>
+</html>
