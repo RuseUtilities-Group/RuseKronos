@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Inter', san-serif;
+  font-family: 'Red Hat Text', san-serif;
   background-image: linear-gradient(120deg, #f6d365, #fda085);
   min-height:  100vh;
 }
@@ -25,6 +25,9 @@ body{
   padding-left: 5%
 }
 
+#todaysClasses{
+  padding-top: 5%
+}
 #quoteContainer{
   font: inherit;
   color: white;
@@ -48,7 +51,7 @@ body{
 .TodoListClass{
 position: absolute;
 top: 49%;
-right: 0%;
+right: -3%;
 zoom: 0.75;
 -moz-transform: scale(0.75);
 }
