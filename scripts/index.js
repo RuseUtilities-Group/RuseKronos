@@ -1,16 +1,5 @@
-//CUSTOMISE YOUR TODO LIST:
-//ENTER YOUR NAME AT LINE 6
-//Change your location in line 7 for weather, must be a well known capital city.
-//
-//
-const name = "Joshua"
-const city = "Sydney"
-//
-//
-//
-//
-//
-
+const name = ""
+const city = "Carlingford,NSW"
 
 //Select DOM
 const todoInput = document.querySelector(".todo-input");
