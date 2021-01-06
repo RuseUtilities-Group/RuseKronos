@@ -21,18 +21,18 @@ function gen_table(json) {
 		tableIn += "<td id=\"timetableTd\"><table id=\"timetableDay\">";
 		tableIn += `<tr><th>${listOfDays[day].substring(0, listOfDays[day].length-1)[0].toUpperCase() + listOfDays[day].substring(0, listOfDays[day].length-1).slice(1) + " " + listOfDays[day][listOfDays[day].length-1]}</th></tr>`;
 		period = 1;
-		while(typeof it[listOfDays[day]][`Period ${period}`] != "undefined") {
+		while(typeof it[listOfDays[day]][`P${period}`] != "undefined") {
 			tableIn += "<tr>";
 
-			startTime = it[listOfDays[day]][`Period ${period}`].startTime;
-			teacher = it[listOfDays[day]][`Period ${period}`].teacher;
-			subject = it[listOfDays[day]][`Period ${period}`].subject;
-			room = it[listOfDays[day]][`Period ${period}`].room;
+			startTime = it[listOfDays[day]][`P${period}`].startTime;
+			teacher = it[listOfDays[day]][`P${period}`].teacher;
+			subject = it[listOfDays[day]][`P${period}`].subject;
+			room = it[listOfDays[day]][`P${period}`].room;
 
 			if(teacher != "") {
 				tableIn += `<td id="timetableTd1">P${period}: ${subject} <br></td>`;
 			}
-			else if (room == "sport"){
+			else if (room == "Sport"){
 				tableIn += `<td id="timetableTd1">Sports</td>`;
 			}
 			else if (room == "Scripture"){

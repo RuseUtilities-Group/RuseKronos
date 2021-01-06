@@ -28,7 +28,7 @@
     
         "Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
             "startTime": "10:54",
             "periodLength": "15"
@@ -447,7 +447,7 @@
     
         "Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
             "startTime": "10:54",
             "periodLength": "15"
@@ -733,7 +733,7 @@
     
         "Lunch":{
             "subject": "",
-            "room": "",
+            "room": "Lunch",
             "teacher": "",
             "startTime": "13:05",
             "periodLength": "30"
@@ -757,7 +757,7 @@
     
         "End of Day":{
             "subject": "",
-            "room": "",
+            "room": "End of Day",
             "teacher": "",
             "startTime": "15:05"
         }
@@ -792,7 +792,7 @@
         "Recess":{
             "subject": "",
             "room": "",
-            "teacher": "",
+            "teacher": "Recess",
             "startTime": "11:05",
             "periodLength": "35"
         },	
@@ -815,7 +815,7 @@
     
         "Lunch":{
             "subject": "",
-            "room": "",
+            "room": "Lunch",
             "teacher": "",
             "startTime": "13:05",
             "periodLength": "30"
@@ -839,7 +839,7 @@
     
         "End of Day":{
             "subject": "",
-            "room": "",
+            "room": "End of Day",
             "teacher": "",
             "startTime": "15:05"
         }

@@ -19,8 +19,8 @@ body{
 }
 #insight{
   border-radius: 15px;
-  border: thick rgba(251, 176, 123, 1);
-  background-color: rgba(251, 176, 123, 1);
+  border: thick rgba(253, 160, 133, 0.9);
+  background-color: rgba(253, 160, 133, 0.9);
   padding-top: 5%;
   padding-left: 5%
 }
