@@ -23,6 +23,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+          if (localStorage.getItem("personalTimetable") == null) {
+              window.location.href = "./landing.html"
+          }
+	      </script>
 	</head>
 
 	<body>
@@ -42,6 +47,7 @@
                   <a class="dropdown-item" href="calendar.html">School Events Calendar</a>
                   <a class="dropdown-item" href="staff.html">Staff Email List</a>
                   <a class="dropdown-item" href="links.html">Useful Links</a>
+                  <a class="dropdown-item" href="https://chrome.google.com/webstore/detail/kronos/olhbpdalnokbaabnlodbcefpfbnjioam?authuser=8&hl=en">RuseKronos Chrome Extension</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -59,7 +65,20 @@
               </li>
             </ul>
           </nav>
-				
+          <main style="text-align:center; padding-top: 10px">
+
+            <h2>Below are some useful links:</h2>
+            <div style="font-size: 24px !important;padding: 20px;text-decoration: none !important;text-align: center;">
+              <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="link"> Gmail</a> <br><br>
+              <a href="https://jamesruseahs.sentral.com.au/portal/login" target="_blank" class="link"> Sentral</a><br><br>
+              <a href="https://sites.google.com/jamesruse.nsw.edu.au/intranet" target="_blank" class="link"> Intranet</a><br><br>
+              <a href="https://classroom.google.com/u/0/" target="_blank" class="link"> Google Classroom</a><br><br>
+              <a href="https://jamesruseh.eplatform.co/" target="_blank" class="link"> eBook Library</a><br><br>
+              <a href="https://jamesruse-h.schools.nsw.gov.au/" target="_blank" class="link"> JRAHS Website</a><br><br>
+              <a href="https://www.instagram.com/ruse_utilities_group/" target="_blank" class="link"> RUG Instagram</a><br><br>
+              <a href="https://chrome.google.com/webstore/detail/kronos/olhbpdalnokbaabnlodbcefpfbnjioam?authuser=8&hl=en" target="_blank" class="link"> Kronos Chrome Extension</a><br><br>
+              <a href="https://docs.google.com/spreadsheets/d/1vF9aPw-lwmIxFcF-lR4jObqg_7BFtA2CDar1G2q0iRY/edit#gid=0" target="_blank" class="link"> JRAHS Staff List</a>
+            </div>
 		
 	</body>
 </html>
