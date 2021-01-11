@@ -1,6 +1,6 @@
 // By Chris Ahn and Ethan Du Toit and Joshua Koh
 let next = 0;
-let jsonPath = 'Scripts/';
+let jsonPath = 'scripts/';
 let times = [];
 let today = new Date();
 let jan1 = new Date();
