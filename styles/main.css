@@ -1,13 +1,13 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body{
   font-family: 'Red Hat Text', san-serif;
   background-image: linear-gradient(120deg, #f6d365, #fda085);
   min-height:  100vh;
+}
+
+#timetable{
+  position: absolute;
+  top: 10%;
+  left: 2%;
 }
 
 .kronosTimer{

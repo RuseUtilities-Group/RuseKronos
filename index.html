@@ -26,7 +26,7 @@
           gtag('config', 'UA-168347540-1');
         </script>
         <script>
-          if (localStorage.getItem("personalTimetable") == null) {
+          if (!localStorage.getItem("personalTimetable")) {
               window.location.href = "./landing.html"
           }
 	      </script>

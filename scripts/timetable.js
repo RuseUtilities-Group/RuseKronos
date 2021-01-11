@@ -19,7 +19,7 @@ function gen_table(json) {
 			tableIn += "<tr id=\"Weeks\">";
 		}
 		tableIn += "<td id=\"timetableTd\"><table id=\"timetableDay\">";
-		tableIn += `<tr><th>${listOfDays[day].substring(0, listOfDays[day].length-1)[0].toUpperCase() + listOfDays[day].substring(0, listOfDays[day].length-1).slice(1) + " " + listOfDays[day][listOfDays[day].length-1]}</th></tr>`;
+		tableIn += `<tr><th style="padding-left: 14px">${listOfDays[day].substring(0, listOfDays[day].length-1)[0].toUpperCase() + listOfDays[day].substring(0, listOfDays[day].length-1).slice(1) + " " + listOfDays[day][listOfDays[day].length-1]}</th></tr>`;
 		period = 1;
 		while(typeof it[listOfDays[day]][`P${period}`] != "undefined") {
 			tableIn += "<tr>";
@@ -29,37 +29,39 @@ function gen_table(json) {
 			subject = it[listOfDays[day]][`P${period}`].subject;
 			room = it[listOfDays[day]][`P${period}`].room;
 
+			if(startTime.startsWith("9") || startTime.startsWith("8")) startTime = "0" + startTime
+
 			if(teacher != "") {
-				tableIn += `<td id="timetableTd1">P${period}: ${subject} <br></td>`;
+				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">P${period}: ${subject} <br></td>`;
 			}
 			else if (room == "Sport"){
-				tableIn += `<td id="timetableTd1">Sports</td>`;
+				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Sports</td>`;
 			}
 			else if (room == "Scripture"){
-				tableIn += `<td id="timetableTd1">Scripture</td>`
+				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Scripture</td>`
 			}
 			else {
-				tableIn += `<td id="timetableTd1">Free Period</td>`;
+				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Free Period</td>`;
 			}
-			tableIn += `<td id="startTimeTd">${startTime}</td>`;
+			tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
 
 			tableIn += "</tr>";
 
 			if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
 				startTime = it[listOfDays[day]]["Recess"].startTime;
-				tableIn += `<tr><td>Recess</td>`;
-				tableIn += `<td id="startTimeTd">${startTime}</td>`;
+				tableIn += `<tr><td style="padding-left: 14px;">Recess</td>`;
+				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
 				tableIn += "</tr>";
 			}
 			if((day % 5 != 2 && period == 5) || (day % 5 == 2 && period == 4)) {
 				startTime = it[listOfDays[day]]["Lunch"].startTime;
-				tableIn += `<tr><td>Lunch</td>`;
-				tableIn += `<td id="startTimeTd">${startTime}</td>`;
+				tableIn += `<tr><td style="padding-left: 14px;">Lunch</td>`;
+				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
 				tableIn += "</tr>";
 			}
 			period++;
 		}
-		tableIn += `<tr><td>End of Day</td><td>${it[listOfDays[day]]["End of Day"].startTime}</td></tr>`
+		tableIn += `<tr><td style="padding-left: 14px">End of Day</td><td style="padding-left: 7px">${it[listOfDays[day]]["End of Day"].startTime}</td></tr>`
 		tableIn += "</table></td>";
 		if(day % 5 == 4) {
 			tableIn += "</tr>";
