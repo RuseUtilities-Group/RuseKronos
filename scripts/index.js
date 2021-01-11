@@ -162,7 +162,7 @@ function checkTime(i) {
 };
 
 //Fetch API from OpenWeather
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=277e4ead61d59f325b8ecfd98dd8963b`).then(function (response) {
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=277e4ead61d59f325b8ecfd98dd8963b`).then(function (response) {
 	// The API call was successful!
 	return response.json();
 }).then(function (data) {
