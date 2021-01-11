@@ -25,7 +25,7 @@ function icalParse() {
 		fileReader.readAsText(file);
 	});
 }
-
+ 
 function getTemplate() {
 	return new Promise((resolve, reject) => {
 		let xhr = new XMLHttpRequest();
