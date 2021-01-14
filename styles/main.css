@@ -52,7 +52,7 @@ body{
 .TodoListClass{
 position: absolute;
 top: 55%;
-right: -3%;
+right: 1%;
 zoom: 0.75;
 -moz-transform: scale(0.75);
 }
