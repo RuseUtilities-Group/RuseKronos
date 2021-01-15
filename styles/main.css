@@ -13,7 +13,7 @@ body{
 .kronosTimer{
   position: absolute;
   left: 3.5%;
-  top: 19%;
+  padding-top: 5%;
   zoom: 1.35;
   -moz-transform: scale(1.25);
 }
@@ -51,8 +51,8 @@ body{
 
 .TodoListClass{
 position: absolute;
-top: 55%;
-right: 1%;
+top: 60%;
+right: 0%;
 zoom: 0.75;
 -moz-transform: scale(0.75);
 }
@@ -257,7 +257,7 @@ select {
       border-radius: 5px;
       overflow: visible;
       font-family: Helvetica, sans-serif;
-      font-size: inherit;
+      fzont-sie: inherit;
       line-height: inherit;
       color: inherit;
       text-transform: none;
