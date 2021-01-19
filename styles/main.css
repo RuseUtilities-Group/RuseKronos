@@ -1,3 +1,12 @@
+<<<<<<< Updated upstream
+=======
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+>>>>>>> Stashed changes
 body{
   font-family: 'Red Hat Text', san-serif;
   background-image: linear-gradient(120deg, #f6d365, #fda085);
@@ -189,7 +198,7 @@ select {
 }
 select {
   color: #ff6f47;
-  font-family: "Poppins", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   cursor: pointer;
   width: 12rem;
 }
@@ -205,6 +214,7 @@ select {
   pointer-events: none;
 }
 
+<<<<<<< Updated upstream
 /*CSS for the Container Area on Index.Html*/
 #container{
     margin-top: 5%;
@@ -279,4 +289,8 @@ select {
   #buttonEnterClasses a:hover {
     opacity:1;
   }
+=======
+/*CSS for landing page poggers time*/
+
+>>>>>>> Stashed changes
   
