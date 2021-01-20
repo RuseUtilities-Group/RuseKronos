@@ -3,6 +3,7 @@
     
     "mondayA":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -85,6 +86,7 @@
     
     "tuesdayA":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -167,6 +169,7 @@
     
     "wednesdayA":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -249,6 +252,7 @@
     
     "thursdayA":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -339,6 +343,7 @@
     
     "fridayA":{ 
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -422,6 +427,7 @@
     
     "mondayB":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -512,6 +518,7 @@
     
     "tuesdayB":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -594,6 +601,7 @@
     
     "wednesdayB":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -676,6 +684,7 @@
     
     "thursdayB":{
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",
@@ -766,6 +775,7 @@
     
     "fridayB":{ 
         "P1":{
+            "name": "Period 1",
             "subject": "",
             "room": "",
             "teacher": "",

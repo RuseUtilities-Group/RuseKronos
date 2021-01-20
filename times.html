@@ -25,6 +25,12 @@
 
           gtag('config', 'UA-168347540-1');
         </script>
+
+        <script>
+            if (localStorage.getItem("personalTimetable")) {
+                window.location.href = "./index.html"
+            }
+        </script>
     </head>
     <body onload="startTime()">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -33,15 +39,7 @@
             </a>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="upload.html">Timetable</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="notes.html">Note Taking</a>
-              </li>
-              <li class="nav-item dropdown">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="settings.html">Settings</a>
+                <a class="nav-link" href="upload.html">Upload a Timetable</a>
               </li>
             </ul>
           </nav>
@@ -55,7 +53,7 @@
               <p><span id="timer"></span></p>
             </div>
             <div id="todaysClasses">
-              <h3 style="font-size: 32.5px">TODAY'S CLASSES</h3>
+              <h3 style="font-size: 32.5px">TODAYS CLASSES</h3>
               <table id="times" style="font-size: 22.5px">
               </table>
             </div>

@@ -3,6 +3,7 @@
 
 "mondayA":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -11,6 +12,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -27,6 +29,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -35,6 +38,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -51,6 +55,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -69,6 +74,7 @@
 
 "tuesdayA":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -77,6 +83,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -93,6 +100,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -101,6 +109,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -117,6 +126,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -135,6 +145,7 @@
 
 "wednesdayA":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -143,6 +154,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -167,6 +179,7 @@
 	},
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -183,6 +196,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "Sport",
 		"teacher": "",
@@ -191,6 +205,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "Sport",
 		"teacher": "",
@@ -210,6 +225,7 @@
 
 "thursdayA":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -218,6 +234,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -234,6 +251,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -242,6 +260,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -258,6 +277,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -276,6 +296,7 @@
 
 "fridayA":{ 
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -284,6 +305,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -300,6 +322,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -308,6 +331,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -324,6 +348,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -341,6 +366,7 @@
 
 "mondayB":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -349,6 +375,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -365,6 +392,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -373,6 +401,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -389,6 +418,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -406,6 +436,7 @@
 
 "tuesdayB":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -414,6 +445,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -430,6 +462,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -438,6 +471,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -454,6 +488,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -471,6 +506,7 @@
 
 "wednesdayB":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -479,6 +515,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -503,6 +540,7 @@
 	},
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -519,6 +557,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "Sport",
 		"teacher": "",
@@ -527,6 +566,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "Sport",
 		"teacher": "",
@@ -544,6 +584,7 @@
 
 "thursdayB":{
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -552,6 +593,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -568,6 +610,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -576,6 +619,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -592,6 +636,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -609,6 +654,7 @@
 
 "fridayB":{ 
 	"Period 1":{
+        "name": "Period 1",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -617,6 +663,7 @@
 	},
 
 	"Period 2":{
+        "name": "Period 2",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -633,6 +680,7 @@
         },
 
 	"Period 3":{
+        "name": "Period 3",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -641,6 +689,7 @@
 	},
 
 	"Period 4":{
+        "name": "Period 4",
 		"subject": "",
 		"room": "",
 		"teacher": "",
@@ -657,6 +706,7 @@
 	},
 
 	"Period 5":{
+        "name": "Period 5",
 		"subject": "",
 		"room": "",
 		"teacher": "",

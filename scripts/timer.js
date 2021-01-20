@@ -60,7 +60,29 @@ function gen_table(json) {
 		tstr += "<tr><td id=\"time1\">";
 		if(v.room == "Sport"){
 			tstr += `<div class="timeSubtext">${k}: Sport</div>`
-		}else if(addDetails && v.room != "") {
+		}else if(!v.room){
+			switch(k){
+				case "P1": k = "Period 1"
+				break;
+				case "P2": k = "Period 2"
+				break;
+				case "P3": k = "Period 3"
+				break;
+				case "P4": k = "Period 4"
+				break;
+				case "P5": k = "Period 5"
+				break;
+				case "P6": k = "Period 6"
+				break;
+				case "P7": k = "Period 7"
+				break;
+				case "P8": k = "Period 8"
+				break;
+			}
+			if(!v.room && k !== "Recess" && k !== "Assembly" && k !=="Lunch" && k !== "End of Day")
+			tstr +=  `<div class="timeSubtext">${k} - ${v.startTime}</div>`
+
+		}else if(addDetails && v.room) {
 			tstr += `<div class="timeSubtext">${k}: ${v.subject} with ${v.teacher} - ${v.room}<div>`;
 		}
 		tstr += "</td><td id=\"time2\">";
@@ -97,13 +119,14 @@ function update(json) {
 		moveDay(json);
 		tt = timeTil();
 	}
+	period.innerHTML = ``Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`
 	periodCountdown.innerHTML = `${timeTilHMS()}`
-	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
 	if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport") periodInfo.innerHTML = "Sport";
-	//else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch") periodInfo.innerHTML = "Lunch";
-	//else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Recess") periodInfo.innerHTML = "Recess";
-	//else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "End of Day") periodInfo.innerHTML = "End of Day";
-	//else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Assembly") periodInfo.innerHTML = "Assembly";
+	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch") periodInfo.innerHTML = "Lunch";
+	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Recess") periodInfo.innerHTML = "Recess";
+	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "End of Day") periodInfo.innerHTML = "End of Day";
+	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Assembly") periodInfo.innerHTML = "Assembly";
+	else if(!json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject) period.innerHTML = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].name} in`;
 	else periodInfo.innerHTML = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
 }
 
