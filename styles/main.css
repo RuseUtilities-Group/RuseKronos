@@ -12,10 +12,8 @@ body{
 
 .kronosTimer{
   position: absolute;
-  left: 3.5%;
-  padding-top: 5%;
-  zoom: 1.35;
-  -moz-transform: scale(1.25);
+  left: 2%;
+  top: 11%;
 }
 #insight{
   border-radius: 15px;
