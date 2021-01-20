@@ -119,7 +119,7 @@ function update(json) {
 		moveDay(json);
 		tt = timeTil();
 	}
-	period.innerHTML = ``Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`
+	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport") periodInfo.innerHTML = "Sport";
 	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch") periodInfo.innerHTML = "Lunch";
