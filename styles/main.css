@@ -22,6 +22,27 @@ body{
   padding-top: 5%;
   padding-left: 5%
 }
+#leftSide{
+  position: absolute;
+  padding-left: 2.5%;
+  padding-top: 17.5%;
+}
+
+#rightLeftSide{
+  margin-top: -41%;
+  padding-left: 40%
+}
+#versionBox{
+  margin-top: -5%;
+  color: white;
+  position: absolute;
+  border-radius: 10px;
+  border: thick orangered;
+  background-color: orangered;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 
 #todaysClasses{
   padding-top: 5%
@@ -51,8 +72,8 @@ body{
 position: absolute;
 top: 60%;
 right: 0%;
-zoom: 0.75;
--moz-transform: scale(0.75);
+zoom: 0.85;
+-moz-transform: scale(0.85);
 }
 
 #clock{
