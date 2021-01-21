@@ -125,7 +125,7 @@ function update(json) {
 	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Recess") periodInfo.innerHTML = "Recess";
 	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "End of Day") periodInfo.innerHTML = "End of Day";
 	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Assembly") periodInfo.innerHTML = "Assembly";
-	else `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].name} in`;
+	else period.innerHTML = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].name} in`;
 }
 
 let xhr = new XMLHttpRequest();
