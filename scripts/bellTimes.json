@@ -1,861 +1,726 @@
 {
-    "timetableData": {
-    
-    "mondayA":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "42"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:32",
-            "periodLength": "41"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:13",
-            "periodLength": "41"
-        },
-    
-        "Recess":{
+"timetableData": {
+
+"mondayA":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
             "room": "Recess",
             "teacher": "",
-            "startTime": "10:54",
-            "periodLength": "15"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:09",
-            "periodLength": "42"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:51",
-            "periodLength": "41"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:32",
-            "periodLength": "30"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:02",
-            "periodLength": "42"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:44",
-            "periodLength": "41"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "tuesdayA":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "48"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:38",
-            "periodLength": "46"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:24",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:09",
-            "periodLength": "20"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:29",
-            "periodLength": "44"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:15",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:00",
-            "periodLength": "35"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "wednesdayA":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "18"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:38",
-            "periodLength": "45"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:23",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:08",
-            "periodLength": "40"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "Sport",
-            "teacher": "",
-            "startTime": "12:48",
-            "periodLength": "46"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "Sport",
-            "teacher": "",
-            "startTime": "13:34",
-            "periodLength": "46"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "thursdayA":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "45"
-        },
-    
-        "Assembly":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:05",
-            "periodLength": "15"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:20",
-            "periodLength": "15"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:35",
-            "periodLength": "45"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:20",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:05",
-            "periodLength": "30"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "fridayA":{ 
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:05",
-            "periodLength": "35"
-        },	
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:35",
-            "periodLength": "45"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:20",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:05",
-            "periodLength": "30"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    
-    },
-    
-    "mondayB":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "42"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:32",
-            "periodLength": "41"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:13",
-            "periodLength": "41"
-        },
-    
-        "Recess":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+
+},
+
+"tuesdayA":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
             "room": "Recess",
             "teacher": "",
-            "startTime": "10:54",
-            "periodLength": "15"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "P4":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+
+},
+
+"wednesdayA":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "55"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:45",
+		"periodLength": "55"
+	},
+
+	"Assembly":{
+		"subject": "",
+		"room": "Assembly",
+		"teacher": "",
+		"startTime": "10:40",
+		"periodLength": "15"
+	},
+
+	"Recess":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "10:55",
+		"periodLength": "20"
+	},
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:15",
+		"periodLength": "55"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "12:10",
+		"periodLength": "55"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "Sport",
+		"teacher": "",
+		"startTime": "12:45",
+		"periodLength": "55"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "Sport",
+		"teacher": "",
+		"startTime": "13:40",
+		"periodLength": "55"
+	},
+
+	
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+
+},
+
+"thursdayA":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "11:09",
-            "periodLength": "42"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "P5":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+
+},
+
+"fridayA":{ 
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "11:51",
-            "periodLength": "41"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "Lunch":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+},
+
+"mondayB":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "12:32",
-            "periodLength": "30"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "P6":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+},
+
+"tuesdayB":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "13:02",
-            "periodLength": "42"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "P7":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+},
+
+"wednesdayB":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "55"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:45",
+		"periodLength": "55"
+	},
+
+	"Assembly":{
+		"subject": "",
+		"room": "Assembly",
+		"teacher": "",
+		"startTime": "10:40",
+		"periodLength": "15"
+	},
+
+	"Recess":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "10:55",
+		"periodLength": "20"
+	},
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:15",
+		"periodLength": "55"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "12:10",
+		"periodLength": "55"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "Sport",
+		"teacher": "",
+		"startTime": "12:45",
+		"periodLength": "55"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "Sport",
+		"teacher": "",
+		"startTime": "13:40",
+		"periodLength": "55"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+},
+
+"thursdayB":{
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "13:44",
-            "periodLength": "41"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-         "P8":{
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+},
+
+"fridayB":{ 
+	"Period 1":{
+        "name": "Period 1",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "08:50",
+		"periodLength": "65"
+	},
+
+	"Period 2":{
+        "name": "Period 2",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "09:55",
+		"periodLength": "65"
+	},
+
+	"Recess":{
             "subject": "",
-            "room": "",
+            "room": "Recess",
             "teacher": "",
-            "startTime": "14:25",
-            "periodLength": "40"
+            "startTime": "11:00",
+            "periodLength": "25"
         },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "tuesdayB":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "48"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:38",
-            "periodLength": "46"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:24",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:09",
-            "periodLength": "20"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:29",
-            "periodLength": "44"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:15",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:00",
-            "periodLength": "35"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "wednesdayB":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "18"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:38",
-            "periodLength": "45"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:23",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:08",
-            "periodLength": "40"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "Sport",
-            "teacher": "",
-            "startTime": "12:48",
-            "periodLength": "46"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "Sport",
-            "teacher": "",
-            "startTime": "13:34",
-            "periodLength": "46"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "thursdayB":{
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "45"
-        },
-    
-        "Assembly":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:05",
-            "periodLength": "15"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:20",
-            "periodLength": "15"
-        },
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:35",
-            "periodLength": "45"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:20",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "Lunch",
-            "teacher": "",
-            "startTime": "13:05",
-            "periodLength": "30"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "End of Day",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    },
-    
-    "fridayB":{ 
-        "P1":{
-            "name": "Period 1",
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "08:50",
-            "periodLength": "45"
-        },
-    
-        "P2":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "09:35",
-            "periodLength": "45"
-        },
-    
-        "P3":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "10:20",
-            "periodLength": "45"
-        },
-    
-        "Recess":{
-            "subject": "",
-            "room": "",
-            "teacher": "Recess",
-            "startTime": "11:05",
-            "periodLength": "35"
-        },	
-    
-        "P4":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "11:35",
-            "periodLength": "45"
-        },
-    
-        "P5":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "12:20",
-            "periodLength": "45"
-        },
-    
-        "Lunch":{
-            "subject": "",
-            "room": "Lunch",
-            "teacher": "",
-            "startTime": "13:05",
-            "periodLength": "30"
-        },
-    
-        "P6":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "13:35",
-            "periodLength": "45"
-        },
-    
-        "P7":{
-            "subject": "",
-            "room": "",
-            "teacher": "",
-            "startTime": "14:20",
-            "periodLength": "45"
-        },
-    
-        "End of Day":{
-            "subject": "",
-            "room": "End of Day",
-            "teacher": "",
-            "startTime": "15:05"
-        }
-    
-    
-    }
-    
-    }}
-    
+
+	"Period 3":{
+        "name": "Period 3",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "11:25",
+		"periodLength": "60"
+	},
+
+	"Period 4":{
+        "name": "Period 4",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "12:25",
+		"periodLength": "60"
+	},
+
+	"Lunch":{
+		"subject": "",
+		"room": "Lunch",
+		"teacher": "",
+		"startTime": "13:25",
+		"periodLength": "40"
+	},
+
+	"Period 5":{
+        "name": "Period 5",
+		"subject": "",
+		"room": "",
+		"teacher": "",
+		"startTime": "14:05",
+		"periodLength": "60"
+	},
+
+	"End of Day":{
+		"subject": "",
+		"room": "End of Day",
+		"teacher": "",
+		"startTime": "15:05"
+	}
+
+}
+
+}}
