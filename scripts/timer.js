@@ -54,6 +54,7 @@ function gen_table(json) {
 		console.log ("Uh oh");
 		it = {};
 	}
+	console.log(json)
 	for(var [k, v] of Object.entries(it)) {
 		tstr += "<tr><td id=\"time1\">";
 		if(v.room == "Sport"){
