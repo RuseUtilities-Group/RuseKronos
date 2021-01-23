@@ -61,7 +61,7 @@ function gen_table(json) {
 		tstr += "<tr><td id=\"time1\">";
 		if(v.room == "Sport"){
 			tstr += `<div class="timeSubtext">${k1}: Sport</div>`
-		}else if(v.room === "Recess", "Lunch", "End of Day", "Assembly") return;
+		}else if(v.room === "Recess"||v.room === "Lunch"||v.room === "End of Day"||v.room === "Assembly");
 		else if(addDetails && v.room != "") {
 			tstr += `<div class="timeSubtext">${k1}: ${v.subject} with ${v.teacher} - ${v.room}<div>`;
 		}
