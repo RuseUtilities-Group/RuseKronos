@@ -46,14 +46,10 @@ async function icalProcess() {
 		//Wait for icalParse() to finish
 		var jcalData = await icalParse();
 		var jsonData = await getTemplate();
-		console.log(jcalData);
 
 		//Extract events (i.e periods) from jcal
 		var jcalDataComp = new ICAL.Component(jcalData);
 		var events = jcalDataComp.getAllSubcomponents("vevent");
-
-		console.log(jcalData);
-		console.log(events);
 
 		//IMPORTANT:
 		// //	Sentral starts the timetable from wednesday week A
@@ -75,13 +71,15 @@ async function icalProcess() {
 		//	of 8 periods, is chosen as the identifier, with the timetable starting
 		//	on the next day, tuesday.
 		//
+		//Notes From Josh: It seems that a blood moon will rise over saturn each year, as a new day will always be chosen every year. As a result line 86 should be changed each year...
+
 		//Additional Notes:
 		//	start time is in .dtstart
 		//	teacher's name is in .description
 		//	subject is in .summary
 		//	location is in .location
 
-		var listOfDays = ['wednesdayA', 'thursdayA', 'fridayA', 'mondayB', 'tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA'];
+		var listOfDays = ['fridayA', 'mondayB', 'tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA', 'thursdayA'];
 		var curDay = 0;
 
 		var prevPeriod = 0;
@@ -91,14 +89,14 @@ async function icalProcess() {
 			var description = events[i].getFirstPropertyValue('description');
 			var tAndP = description.split("\n");
 			var period = parseInt(tAndP[1].split(" p.")[1], 10);
-
-			if (Number.isNaN(period)) {
+			if (isNaN(period)) {
 				continue;
 			}
 			if(prevPeriod > period) {
 				if(prevPeriod == 8) { 
 					//Reset back to first period monday
 					offset = i
+					
 					//Modify the list
 					listOfDays = ['tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA', 'thursdayA', 'fridayA', 'mondayB'];
 					break;
@@ -135,11 +133,15 @@ async function icalProcess() {
 
 			//Dealing with the description elements
 			var tAndP = description.split("\n");
-			var teacher = tAndP[0].split("  ")[1];
-			var period = parseInt(tAndP[1].split(" p.")[1], 10);
+			var teacherTitle = tAndP[0].split(" ")[1];
+			var teacherFirstName = tAndP[0].split(" ")[2];
+			var teacherLastName = tAndP[0].split(" ")[3];
+			var teacher = teacherTitle + " " + teacherLastName;
+			var period = parseInt(tAndP[1].split(": ")[1], 10);
 
 			//Dealing with the summary elements
-			var subject = summary.split(": ")[1];
+			var subject1 = summary.split(": ")[1];
+			var subject = subject1.split(" Yr")[0];
 
 			//Dealing with the location elements
 			var room = lctn.split(": ")[1];
@@ -159,18 +161,18 @@ async function icalProcess() {
 
 			console.log(i);
 			console.log("day: " + curDay);
-			console.log("period: " + period)
+
 
 			// console.log(jsonData.timetableData[listOfDays[curDay]]);
 			// jsonData.timetableData[listOfDays[curDay]][`Period ${period}`];
 			if(curDay % 5 == 0 && period > 4) {
 				console.log("what")
 			}
-			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].startTime = `${hours}:${minute.toString().padStart(2, '0')}`;
-			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
-			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].teacher = teacher;
-			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].subject = subject;
-			jsonData.timetableData[listOfDays[curDay%10]][`P${period}`].room = room;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].startTime = `${hours}:${minute.toString().padStart(2, '0')}`;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].teacher = teacher;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].subject = subject;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].room = room;
 
 			// console.log(periodStart);
 			// console.log(periodEnd);
