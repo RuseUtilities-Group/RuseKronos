@@ -136,7 +136,7 @@ async function icalProcess() {
 			var teacherTitle = tAndP[0].split(" ")[1];
 			var teacherFirstName = tAndP[0].split(" ")[2];
 			var teacherLastName = tAndP[0].split(" ")[3];
-			var teacher = teacherTitle + " " + teacherLastName;
+			var teacher = teacherTitle + " " + teacherLastName.charAt(0).toUpperCase() + teacherLastName.slice(1).toLowerCase(); ;
 			var period = parseInt(tAndP[1].split(": ")[1], 10);
 
 			//Dealing with the summary elements
