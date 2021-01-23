@@ -56,12 +56,13 @@ function gen_table(json) {
 	}
 	console.log(json)
 	for(var [k, v] of Object.entries(it)) {
-		if(k.startsWith("P")) k = k.split("eriod ")[0] + k.split("eriod ")[1];
+		if(k.startsWith("P")) var k1 = k.split("eriod ")[0] + k.split("eriod ")[1];
+		else k1 = k;
 		tstr += "<tr><td id=\"time1\">";
 		if(v.room == "Sport"){
-			tstr += `<div class="timeSubtext">${k}: Sport</div>`
+			tstr += `<div class="timeSubtext">${k1}: Sport</div>`
 		}else if(addDetails && v.room != "") {
-			tstr += `<div class="timeSubtext">${k}: ${v.subject} with ${v.teacher} - ${v.room}<div>`;
+			tstr += `<div class="timeSubtext">${k1}: ${v.subject} with ${v.teacher} - ${v.room}<div>`;
 		}
 		tstr += "</td><td id=\"time2\">";
 		tstr += "</td></tr>";
