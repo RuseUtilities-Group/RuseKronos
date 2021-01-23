@@ -21,23 +21,23 @@ function gen_table(json) {
 		tableIn += "<td id=\"timetableTd\"><table id=\"timetableDay\">";
 		tableIn += `<tr><th style="padding-left: 14px">${listOfDays[day].substring(0, listOfDays[day].length-1)[0].toUpperCase() + listOfDays[day].substring(0, listOfDays[day].length-1).slice(1) + " " + listOfDays[day][listOfDays[day].length-1]}</th></tr>`;
 		period = 1;
-		while(typeof it[listOfDays[day]][`P${period}`] != "undefined") {
+		while(typeof it[listOfDays[day]][`Period ${period}`] !== "undefined") {
 			tableIn += "<tr>";
 
-			startTime = it[listOfDays[day]][`P${period}`].startTime;
-			teacher = it[listOfDays[day]][`P${period}`].teacher;
-			subject = it[listOfDays[day]][`P${period}`].subject;
-			room = it[listOfDays[day]][`P${period}`].room;
+			startTime = it[listOfDays[day]][`Period ${period}`].startTime;
+			teacher = it[listOfDays[day]][`Period ${period}`].teacher;
+			subject = it[listOfDays[day]][`Period ${period}`].subject;
+			room = it[listOfDays[day]][`Period ${period}`].room;
 
 			if(startTime.startsWith("9") || startTime.startsWith("8")) startTime = "0" + startTime
 
-			if(teacher != "") {
+			if(teacher !== "") {
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">P${period}: ${subject} <br></td>`;
 			}
-			else if (room == "Sport"){
+			else if (room === "Sport"){
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Sports</td>`;
 			}
-			else if (room == "Scripture"){
+			else if (room === "Scripture"){
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Scripture</td>`
 			}
 			else {

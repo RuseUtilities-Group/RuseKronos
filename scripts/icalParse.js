@@ -119,12 +119,12 @@ async function icalProcess() {
 
 			//Dealing with time
 			// var periodStart = new Date(Date.UTC(eventStart.year, eventStart.month, eventStart.day, eventStart.hour, eventStart.minute, 0, 0))
-			var periodStart = new Date(Date.UTC(1, 1, 1, eventStart.hour, eventStart.minute, 0, 0))
+			var periodStart = new Date(Date.UTC(1, 1, 1, eventStart.hour + 1, eventStart.minute, 0, 0))
 			periodStart.setDate(1);
 			// // periodStart = new Date(periodStart.toLocaleString("en-US", {timeZone: "Australia/Sydney"}));
 
 			// var periodEnd = new Date(Date.UTC(eventEnd.year, eventEnd.month, eventEnd.day, eventEnd.hour, eventEnd.minute, 0, 0))
-			var periodEnd = new Date(Date.UTC(1, 1, 1, eventEnd.hour, eventEnd.minute, 0, 0))
+			var periodEnd = new Date(Date.UTC(1, 1, 1, eventEnd.hour + 1, eventEnd.minute, 0, 0))
 			periodEnd.setDate(1);
 			// periodEnd = new Date(periodEnd.toLocaleString("en-US", {timeZone: "Australia/Sydney"}));
 
