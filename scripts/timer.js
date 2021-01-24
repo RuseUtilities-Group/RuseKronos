@@ -100,7 +100,10 @@ function update(json) {
 		moveDay(json);
 		tt = timeTil();
 	}
+	console.log(tt)
 	periodCountdown.innerHTML = `${timeTilHMS()}`
+	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
+	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";
 	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
 	if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport") periodInfo.innerHTML = "Sport";
 	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch") periodInfo.innerHTML = "Lunch";
