@@ -8,6 +8,7 @@ let addDetails = false;
 jan1.setMonth(0);
 jan1.setDate(1);
 jan1.setHours(0,0,0,0);
+console.log(jan1)
 function day() {return today.getDay();}
 let dateNamesFrom = {"sunday":0, "monday":1, "tuesday":2, "wednesday":3,
 	"thursday":4, "friday":5, "saturday":6}
@@ -22,10 +23,12 @@ function daysFrom(date1, date2) {
 	return Math.round((ndate2 - ndate1) / (1000 * 60 * 60 * 24));
 }
 function week() {
-	return (Math.floor((daysFrom(jan1, today) - 4) / 7) % 2) ? 'B' : 'A';
+	return (Math.floor((daysFrom(jan1, today) - 3) / 7) % 2) ? 'B' : 'A';
 	// this is fragile
 	// but the week a b system is fucked anyway ...
+	// I'll tell u whats fucked? How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
 }
+console.log(week())
 function timeTil() {
 	return (times[next].timeFrom + today.getTime()) - Date.now();
 }
@@ -54,7 +57,7 @@ function gen_table(json) {
 		console.log ("Uh oh");
 		it = {};
 	}
-	console.log(json)
+	console.log(it)
 	for(var [k, v] of Object.entries(it)) {
 		if(k.startsWith("P")) var k1 = k.split("eriod ")[0] + k.split("eriod ")[1];
 		else k1 = k;
