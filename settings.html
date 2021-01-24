@@ -83,10 +83,16 @@
             <a class="nav-link" href="#">Feedback</a>
           </li>
         </ul>
-
-
-        <button onclick="localStorage.removeItem(`personalTimetable`);">Erase Timetable</button>
-				
+        
+      <div class="vl"></div>
+      
+        <div id="generalSettingsArea">
+          <div id="nameInputArea" style="display: flex;">
+            <p>Name</p>
+            <input id="nameInput" type="text" oninput="nameInputFunc()">
+          </div>
+          <button onclick="localStorage.removeItem(`personalTimetable`);">Erase Timetable</button>
+        </div>     
           <script src="/scripts/index.js"></script>
 	</body>
 </html>

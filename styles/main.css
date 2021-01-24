@@ -244,7 +244,7 @@ select {
 .icon-scroll:before {
   position: absolute;
   left: 50%;
-}
+} 
 .icon-scroll {
   width: 40px;
   height: 70px;
@@ -301,4 +301,19 @@ select {
     opacity: 0;
     transform: translateY(46px);
   }
+}
+
+.vl {
+  border-left: 10px solid black;
+  height: 100%;
+}
+
+/*Settings*/
+#generalSettingsArea{
+  position: absolute !important;
+  top: 5% !important;
+  left: 35% !important;
+}
+#nameInput{
+  padding-left: 10px
 }

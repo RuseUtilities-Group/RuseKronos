@@ -1,6 +1,19 @@
 //Made By Joshua Koh
-const name = ""
+var name1
+name1 = localStorage.getItem("name")
 const city = "Carlingford,NSW"
+try{
+  document.getElementById("nameInput").placeholder = name1;
+} catch{
+}
+
+//Entering Name Area
+function nameInputFunc() {
+  var Name = document.getElementById("nameInput").value
+  localStorage.setItem("name", Name);
+  name1 = Name
+  document.getElementById("nameInput").placeholder = name1;
+}
 
 //Select DOM
 const todoInput = document.querySelector(".todo-input");
@@ -15,7 +28,7 @@ todoList.addEventListener("click", deleteTodo);
 filterOption.addEventListener("click", filterTodo);
 
 //Functions
-
+ 
 function addTodo(e) {
   //Prevent natural behaviour
   e.preventDefault();
@@ -204,5 +217,5 @@ fetch("https://type.fit/api/quotes")
   else if (hrs >= 17 && hrs <= 24)
       greet = 'Good Evening';
 
-  document.getElementById('greetingDiv').innerHTML =
-      greet + " "+ name;
+  document.getElementById('greetingDiv').innerHTML = greet + " "+ name1;
+  if(name1) document.getElementById('greetingDiv').innerHTML = greet + ", "+ name1;
