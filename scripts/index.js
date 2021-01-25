@@ -4,7 +4,15 @@ if(!localStorage.getItem("name")) name1= ""
 var city = localStorage.getItem("weather")
 if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
 
+if(!localStorage.getItem("classCheck")) localStorage.setItem("classCheck", "0")
+if(!localStorage.getItem("breakCheck")) localStorage.setItem("breakCheck", "0")
+
 try{
+  if(localStorage.getItem("classCheck") === "1") document.getElementById("className").checked = true;
+  if(localStorage.getItem("classCheck") === "0") document.getElementById("className").checked = false;
+  var chk = document.getElementById("className").checked;
+  if(chk == true) localStorage.setItem("classCheck", "1")
+  if(chk == false) localStorage.setItem("classCheck", "0")
   document.getElementById("nameInput").placeholder = name1;
   document.getElementById("weatherInput").placeholder = city;
 } catch{
@@ -18,12 +26,23 @@ function nameInputFunc() {
   document.getElementById("nameInput").placeholder = name1;
 }
 
+function classNameFunc(){
+  var chk = document.getElementById("className").checked;
+  if(chk == true) localStorage.setItem("classCheck", "1")
+  if(chk == false) localStorage.setItem("classCheck", "0")
+}
+
+function breaksShowFunc(){
+  var chk = document.getElementById("showBreak").checked;
+  if(chk == true) localStorage.setItem("breakCheck", "1")
+  if(chk == false) localStorage.setItem("breakCheck", "0")
+}
+
 function weatherInputFunc() {
   var Name = document.getElementById("weatherInput").value
   localStorage.setItem("weather", Name);
   city = Name
   document.getElementById("weatherInput").placeholder = city;
-
 }
 
 //Select DOM

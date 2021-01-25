@@ -141,6 +141,7 @@ async function icalProcess() {
 
 			//Dealing with the summary elements
 			var subject1 = summary.split(": ")[1];
+			var class1 = summary.split(": ")[0];
 			var subject = subject1.split(" Yr")[0];
 
 			//Dealing with the location elements
@@ -172,6 +173,7 @@ async function icalProcess() {
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].teacher = teacher;
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].subject = subject;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].class1 = class1;
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].room = room;
 
 			// console.log(periodStart);

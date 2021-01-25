@@ -88,15 +88,21 @@
       
         <div id="generalSettingsArea">
           <div id="nameInputArea" style="display: flex; padding: 2.5%;">
-            <p style="margin-top: 2.5%;">Name</p>
+            <p style="margin-top: 1.5%;">Name</p>
             <input id="nameInput" type="text" style="margin-left: 5%;" oninput="nameInputFunc()">
           </div>
-          <div style="display: flex; padding: 2.5%;">
-            <p style="margin-top: 3%;">Weather Location (Suburb,NSW)</p>
-            <input id="weatherInput" type="text" style="margin-left: 5%;" placeholder="  Carlingford,NSW" oninput="weatherInputFunc()">
+          <div style="display: flex; padding: 2.5%; padding-top: 1% !important;">
+            <p style="margin-top: 1.5%;">Weather Location (Suburb,NSW)</p>
+            <input id="weatherInput" type="text" style="margin-left: 5%; padding-left: 2%;" placeholder="  Carlingford,NSW" oninput="weatherInputFunc()">
           </div>
           <div style="display: flex; padding: 2.5%;">
-            <p style="margin-top: 3%;">Remove Timetable</p>
+            <p>Show Class Codes</p>
+            <input id="className" type="checkbox" style="margin-left: 3%; margin-top: -1.5%" onclick="classNameFunc()">
+            <p style=" margin-left: 10%;">Show Breaks</p>
+            <input id="showBreaks" type="checkbox" style="margin-left: 3%; margin-top: -1.5%">
+          </div>
+          <div style="display: flex; padding: 2.5%; padding-top: 1% !important;">
+            <p style="margin-top: 1.5%;">Remove Timetable</p>
             <button onclick="localStorage.removeItem(`personalTimetable`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
           </div>
         </div>     

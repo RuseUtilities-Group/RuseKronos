@@ -311,11 +311,11 @@ select {
 /*Settings*/
 #generalSettingsArea{
   text-align: left !important;
-  width: 30%;
+  width: 75%;
   position: absolute !important;
   top: 10% !important;
-  left: 20% !important;
+  left: 17.5% !important;
 }
 #nameInput{
-  padding-left: 10px
+  padding-left: 10px;
 }
