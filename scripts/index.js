@@ -23,6 +23,7 @@ function weatherInputFunc() {
   localStorage.setItem("weather", Name);
   city = Name
   document.getElementById("weatherInput").placeholder = city;
+
 }
 
 //Select DOM
