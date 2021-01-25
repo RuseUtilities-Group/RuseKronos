@@ -10,9 +10,14 @@ if(!localStorage.getItem("breakCheck")) localStorage.setItem("breakCheck", "0")
 try{
   if(localStorage.getItem("classCheck") === "1") document.getElementById("className").checked = true;
   if(localStorage.getItem("classCheck") === "0") document.getElementById("className").checked = false;
+  if(localStorage.getItem("breakCheck") === "1") document.getElementById("showBreaks").checked = true;
+  if(localStorage.getItem("breakCheck") === "0") document.getElementById("showBreaks").checked = false;
   var chk = document.getElementById("className").checked;
   if(chk == true) localStorage.setItem("classCheck", "1")
   if(chk == false) localStorage.setItem("classCheck", "0")
+  var chk1 = document.getElementById("showBreaks").checked;
+  if(chk1 == true) localStorage.setItem("breakCheck", "1")
+  if(chk1 == false) localStorage.setItem("breakCheck", "0")
   document.getElementById("nameInput").placeholder = name1;
   document.getElementById("weatherInput").placeholder = city;
 } catch{
@@ -33,7 +38,7 @@ function classNameFunc(){
 }
 
 function breaksShowFunc(){
-  var chk = document.getElementById("showBreak").checked;
+  var chk = document.getElementById("showBreaks").checked;
   if(chk == true) localStorage.setItem("breakCheck", "1")
   if(chk == false) localStorage.setItem("breakCheck", "0")
 }
