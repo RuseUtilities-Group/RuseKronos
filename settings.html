@@ -87,11 +87,18 @@
       <div class="vl"></div>
       
         <div id="generalSettingsArea">
-          <div id="nameInputArea" style="display: flex;">
-            <p>Name</p>
-            <input id="nameInput" type="text" oninput="nameInputFunc()">
+          <div id="nameInputArea" style="display: flex; padding: 2.5%;">
+            <p style="margin-top: 2.5%;">Name</p>
+            <input id="nameInput" type="text" style="margin-left: 5%;" oninput="nameInputFunc()">
           </div>
-          <button onclick="localStorage.removeItem(`personalTimetable`);">Erase Timetable</button>
+          <div style="display: flex; padding: 2.5%;">
+            <p style="margin-top: 3%;">Weather Location (Suburb,NSW)</p>
+            <input id="weatherInput" type="text" style="margin-left: 5%;" placeholder="  Carlingford,NSW" oninput="weatherInputFunc()">
+          </div>
+          <div style="display: flex; padding: 2.5%;">
+            <p style="margin-top: 3%;">Remove Timetable</p>
+            <button onclick="localStorage.removeItem(`personalTimetable`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
+          </div>
         </div>     
           <script src="/scripts/index.js"></script>
 	</body>

@@ -1,9 +1,12 @@
 //Made By Joshua Koh
-var name1
-name1 = localStorage.getItem("name")
-const city = "Carlingford,NSW"
+var name1 = localStorage.getItem("name")
+if(!localStorage.getItem("name")) name1= ""
+var city = localStorage.getItem("weather")
+if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
+
 try{
   document.getElementById("nameInput").placeholder = name1;
+  document.getElementById("weatherInput").placeholder = city;
 } catch{
 }
 
@@ -13,6 +16,13 @@ function nameInputFunc() {
   localStorage.setItem("name", Name);
   name1 = Name
   document.getElementById("nameInput").placeholder = name1;
+}
+
+function weatherInputFunc() {
+  var Name = document.getElementById("weatherInput").value
+  localStorage.setItem("weather", Name);
+  city = Name
+  document.getElementById("weatherInput").placeholder = city;
 }
 
 //Select DOM
