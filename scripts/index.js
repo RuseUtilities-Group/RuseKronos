@@ -6,18 +6,24 @@ if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
 
 if(!localStorage.getItem("classCheck")) localStorage.setItem("classCheck", "0")
 if(!localStorage.getItem("breakCheck")) localStorage.setItem("breakCheck", "0")
+if(!localStorage.getItem("timeCheck")) localStorage.setItem("timeCheck", "0")
 
 try{
   if(localStorage.getItem("classCheck") === "1") document.getElementById("className").checked = true;
   if(localStorage.getItem("classCheck") === "0") document.getElementById("className").checked = false;
   if(localStorage.getItem("breakCheck") === "1") document.getElementById("showBreaks").checked = true;
   if(localStorage.getItem("breakCheck") === "0") document.getElementById("showBreaks").checked = false;
+  if(localStorage.getItem("timeCheck") === "1") document.getElementById("showTimings").checked = true;
+  if(localStorage.getItem("timeCheck") === "0") document.getElementById("showTimings").checked = false;
   var chk = document.getElementById("className").checked;
   if(chk == true) localStorage.setItem("classCheck", "1")
   if(chk == false) localStorage.setItem("classCheck", "0")
   var chk1 = document.getElementById("showBreaks").checked;
   if(chk1 == true) localStorage.setItem("breakCheck", "1")
   if(chk1 == false) localStorage.setItem("breakCheck", "0")
+  var chk2 = document.getElementById("showTimings").checked;
+  if(chk2 == true) localStorage.setItem("timeCheck", "1")
+  if(chk2 == false) localStorage.setItem("timeCheck", "0")
   document.getElementById("nameInput").placeholder = name1;
   document.getElementById("weatherInput").placeholder = city;
 } catch{
@@ -41,6 +47,12 @@ function breaksShowFunc(){
   var chk = document.getElementById("showBreaks").checked;
   if(chk == true) localStorage.setItem("breakCheck", "1")
   if(chk == false) localStorage.setItem("breakCheck", "0")
+}
+
+function timingsShowFunc(){
+  var chk = document.getElementById("showTimings").checked;
+  if(chk == true) localStorage.setItem("timeCheck", "1")
+  if(chk == false) localStorage.setItem("timeCheck", "0")
 }
 
 function weatherInputFunc() {
