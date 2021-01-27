@@ -5,7 +5,7 @@
 		<link href="./styles/main.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet"> 
 		<link rel="icon" href="./styles/images/kronosicon.png" type="image/icon type">
-
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 		<title>Upload Timetable</title>
 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -21,23 +21,25 @@
 
 	</head>
 	<body>
-		<main>
-			<div class="upload" style="position: absolute; top: 0%; left: 5%">
-				<div id="outputLOL"> <h4 style="font-size: 30px !important">Upload School Timetable </h4>
-					<p>How to upload your timetable from Sentral:</p>
-					<p>1. Login to <a href="https://jamesruseahs.sentral.com.au/portal/login" target="_blank" class="link">Sentral</a></p>
-					<p>2. Go to the timetable tag on the left side of the page.</p>
-					<p>3. Click "Export as ICal"</p>
-					<p>4. Upload the downloaded file "my_timetable.ics" here.</p>
-					<p>5. Press Submit and you will be directed to a place that shows your timetable.</p>
-					<p>6. You can now enjoy access to staff list and a bell times page that shows your next class.</p>
-
-					<input type="file" id="myFile"/>
-					<input type="button" id="submitButton" value="Submit" onClick="icalProcess()"/>
-
-                </div>
-            </div>
-		</main>
+		<div id="body">
+			<main>
+				<div class="upload" style="position: absolute; top: 0%; left: 5%">
+					<div id="outputLOL"> <h4 style="font-size: 30px !important">Upload School Timetable </h4>
+						<p>How to upload your timetable from Sentral:</p>
+						<p>1. Login to <a href="https://jamesruseahs.sentral.com.au/portal/login" target="_blank" class="link">Sentral</a></p>
+						<p>2. Go to the timetable tag on the left side of the page.</p>
+						<p>3. Click "Export as ICal"</p>
+						<p>4. Upload the downloaded file "my_timetable.ics" here.</p>
+						<p>5. Press Submit and you will be directed to a place that shows your timetable.</p>
+						<p>6. You can now enjoy access to staff list and a bell times page that shows your next class.</p>
+	
+						<input type="file" id="myFile"/>
+						<input type="button" id="submitButton" value="Submit" onClick="icalProcess()"/>
+	
+					</div>
+				</div>
+			</main>
+		</div>
 		<script type="text/javascript" src="/scripts/icalParse.js"></script>
 		<script type="text/javascript" src="/scripts/ical.js"></script>
 	</body>

@@ -3,10 +3,28 @@ var name1 = localStorage.getItem("name")
 if(!localStorage.getItem("name")) name1= ""
 var city = localStorage.getItem("weather")
 if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
+document.getElementById("body1").fontFamily = "Sans Serif"
+//localStorage.getItem("font");if(!localStorage.getItem("font")) document.getElementById("body").fontFamily = "Red Hat Text"
+console.log(localStorage.getItem("font"))
 
 if(!localStorage.getItem("classCheck")) localStorage.setItem("classCheck", "0")
 if(!localStorage.getItem("breakCheck")) localStorage.setItem("breakCheck", "0")
 if(!localStorage.getItem("timeCheck")) localStorage.setItem("timeCheck", "0")
+
+if(localStorage.getItem("font") === "Red Hat"){
+  console.log(61)
+  //document.getElementById("Red Hat").checked = true
+}else if(localStorage.getItem("font") ==="Roboto"){
+  console.log(62)
+  //document.getElementById("Roboto").checked = true
+}else if(localStorage.getItem("font") === "Verdana"){
+  console.log(63)
+  //document.getElementById("Boutique").checked = true
+}else if(!localStorage.getItem("font")){
+  console.log(64)
+  //document.getElementById("Red Hat").checked = true
+  localStorage.setItem("font", "Red Hat")
+}
 
 try{
   if(localStorage.getItem("classCheck") === "1") document.getElementById("className").checked = true;
@@ -26,6 +44,7 @@ try{
   if(chk2 == false) localStorage.setItem("timeCheck", "0")
   document.getElementById("nameInput").placeholder = name1;
   document.getElementById("weatherInput").placeholder = city;
+
 } catch{
 }
 
@@ -266,3 +285,23 @@ fetch("https://type.fit/api/quotes")
 
   document.getElementById('greetingDiv').innerHTML = greet + " "+ name1;
   if(name1) document.getElementById('greetingDiv').innerHTML = greet + ", "+ name1;
+
+
+function fontRadioSelector(){
+  var redHat = document.getElementById("Red Hat");
+  var Roboto = document.getElementById("Roboto");
+  var boutique = document.getElementById("Boutique")
+  if(redHat.checked === true){
+    localStorage.setItem("font", "Red Hat")
+    document.getElementsByTagName('body').fontFamily = "Red Hat Text"
+    console.log(1)
+  } else if(Roboto.checked === true){
+    localStorage.setItem("font", "Roboto")
+    document.getElementsByTagName('body').fontFamily = "Roboto"
+    console.log(2)
+  } else if(boutique.checked === true){
+    localStorage.setItem("font", "Verdana")
+    document.getElementsByTagName('body').fontFamily = "Verdana"
+    console.log(3)
+  }
+}

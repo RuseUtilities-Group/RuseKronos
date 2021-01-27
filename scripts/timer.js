@@ -8,7 +8,6 @@ let addDetails = false;
 jan1.setMonth(0);
 jan1.setDate(1);
 jan1.setHours(0,0,0,0);
-console.log(jan1)
 function day() {return today.getDay();}
 let dateNamesFrom = {"sunday":0, "monday":1, "tuesday":2, "wednesday":3,
 	"thursday":4, "friday":5, "saturday":6}
@@ -28,7 +27,6 @@ function week() {
 	// but the week a b system is fucked anyway ...
 	// I'll tell u whats fucked? How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
 }
-console.log(week())
 function timeTil() {
 	return (times[next].timeFrom + today.getTime()) - Date.now();
 }
@@ -57,7 +55,6 @@ function gen_table(json) {
 		console.log ("Uh oh");
 		it = {};
 	}
-	console.log(it)
 	for(var [k, v] of Object.entries(it)) {
 		if(k.startsWith("P")) var k1 = k.split("eriod ")[0] + k.split("eriod ")[1];
 		else k1 = k;
@@ -105,7 +102,6 @@ function update(json) {
 		moveDay(json);
 		tt = timeTil();
 	}
-	console.log(tt)
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";

@@ -1,5 +1,5 @@
 body{
-  font-family: 'Red Hat Text', san-serif;
+
   background-image: linear-gradient(120deg, #f6d365, #fda085);
   min-height:  100vh;
 }
@@ -60,7 +60,6 @@ body{
   padding-top: 5%
 }
 #quoteContainer{
-  font: inherit;
   color: white;
   text-align: right;
   position: absolute;
@@ -70,7 +69,6 @@ body{
 }
 
 #greetingDiv{
-  font: inherit;
   font-size: 250%;
   color: white;
   text-align: right;
@@ -220,7 +218,6 @@ select {
 }
 select {
   color: #ff6f47;
-  font-family: "Red Hat Text", sans-serif;
   cursor: pointer;
   width: 12rem;
 }
@@ -318,4 +315,12 @@ select {
 }
 #nameInput{
   padding-left: 10px;
+}
+
+#appearanceSettingsArea{
+  text-align: left !important;
+  width: 75%;
+  position: absolute !important;
+  top: 10% !important;
+  left: 17.5% !important;
 }
