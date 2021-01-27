@@ -33,7 +33,7 @@
 	<body>
     <div id="body">
           <!--Top Navbar-->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
         <a class="navbar-brand" href="./index.html">
             <img src="./styles/images/kronosicon.png" alt="logo" style="width:40px;">
         </a>
@@ -69,7 +69,7 @@
           </li>
         </ul>
       </nav>
-      <!--Settings Sidebar-->
+      <!--Settings Sidebar>
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link" href="#">General</a>
@@ -83,11 +83,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Feedback</a>
             </li>
-          </ul>
+          </ul-->
           
         <div class="vl"></div>
         
-          <div id="generalSettingsArea" style="display:none;">
+          <div id="generalSettingsArea">
             <div id="nameInputArea" style="display: flex; padding: 2.5%;">
               <p style="margin-top: 1.5%;">Name</p>
               <input id="nameInput" type="text" style="margin-left: 5%;" oninput="nameInputFunc()">
@@ -105,12 +105,12 @@
               <input id="showTimings" type="checkbox" style="margin-left: 3%; margin-top: -1.5%" onclick="timingsShowFunc()">
             </div>
             <div style="display: flex; padding: 2.5%; padding-top: 1% !important;">
-              <p style="margin-top: 1.5%;">Remove Timetable</p>
+              <p style="margin-top: 1.5%;">Remove and Re-Upload Timetable</p>
               <button onclick="localStorage.removeItem(`personalTimetable`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
             </div>
           </div>
 
-          <div id="appearanceSettingsArea">
+          <div id="appearanceSettingsArea" style="display:none;">
             <div id="fontChooser" style="display: flex; padding: 2.5%;">
               <p>Font</p>
               <input name="fontRadios" type="radio" id="Red Hat" onclick="fontRadioSelector()" style="margin-left: 6%; margin-top: -1.5%">
@@ -121,6 +121,11 @@
               <label for="Boutique" style="margin-left: 2.5%;">Boutique</label>
             </div>
           </div>
+
+          <div id="aboutSettingsArea">
+
+          </div>
+
     </div>
           <script src="/scripts/index.js"></script>
 	</body>
