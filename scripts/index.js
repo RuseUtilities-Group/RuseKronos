@@ -248,7 +248,7 @@ fetch("https://type.fit/api/quotes")
     }
     const rng1 = rng(1643)
     document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
-    if(data[rng(1643)].author == null) return
+    if(data[rng1].author === null) return
     document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
   });
 
@@ -269,7 +269,7 @@ fetch("https://type.fit/api/quotes")
   if(name1) document.getElementById('greetingDiv').innerHTML = greet + ", "+ name1;
 
 
-function fontRadioSelector(){
+function fonttRadioSelector(){
   var redHat = document.getElementById("Red Hat");
   var Roboto = document.getElementById("Roboto");
   var boutique = document.getElementById("Boutique")
