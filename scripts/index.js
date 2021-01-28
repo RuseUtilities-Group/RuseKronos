@@ -3,7 +3,7 @@ var name1 = localStorage.getItem("name")
 if(!localStorage.getItem("name")) name1= ""
 var city = localStorage.getItem("weather")
 if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
-document.getElementById("body1").fontFamily = "Sans Serif"
+document.getElementById("body1").fontFamily = "Red Hat Text"
 //localStorage.getItem("font");if(!localStorage.getItem("font")) document.getElementById("body").fontFamily = "Red Hat Text"
 console.log(localStorage.getItem("font"))
 
