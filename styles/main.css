@@ -12,7 +12,7 @@ body{
 
 .kronosTimer{
   position: absolute;
-  left: 2%;
+  left: 3%;
   top: 11%;
 }
 #insight{
@@ -21,7 +21,7 @@ body{
   background-color: rgba(253, 160, 133, 0.9);
   padding-top: 5%;
   padding-left: 5%;
-  width: 85%;
+  width: 77.25% !important;
 }
 
 #rightSide{
@@ -64,7 +64,7 @@ body{
   color: white;
   text-align: right;
   position: absolute;
-  top: 35%;
+  top: 37.5%;
   right: 2%;
   width: 40%
 }
@@ -74,7 +74,7 @@ body{
   color: white;
   text-align: right;
   position: absolute;
-  top: 17%;
+  top: 19%;
   right: 2%;
 
 }
@@ -90,7 +90,7 @@ zoom: 0.85;
 #clock{
 text-align: right;
 position: absolute;
-top: 22%;
+top: 24.5%;
 right: 2%;
 color: #ffff;
 font-size: 100%;
@@ -99,7 +99,7 @@ padding: 20px;
 
 #weatherContainer{
 position: absolute;
-top: 7.5%;
+top: 9%;
 right: 7.5%;
 padding: auto;
 }
