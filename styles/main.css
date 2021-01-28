@@ -1,5 +1,5 @@
 body{
-  font: "Red Hat Text";
+  font-family: "Red Hat Text";
   background-image: linear-gradient(120deg, #f6d365, #fda085);
   min-height:  100vh;
 }

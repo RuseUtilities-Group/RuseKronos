@@ -3,28 +3,10 @@ var name1 = localStorage.getItem("name")
 if(!localStorage.getItem("name")) name1= ""
 var city = localStorage.getItem("weather")
 if(!localStorage.getItem("weather")) city= "Carlingford,NSW"
-document.getElementById("body1").fontFamily = "Red Hat Text"
-//localStorage.getItem("font");if(!localStorage.getItem("font")) document.getElementById("body").fontFamily = "Red Hat Text"
-console.log(localStorage.getItem("font"))
 
 if(!localStorage.getItem("classCheck")) localStorage.setItem("classCheck", "0")
 if(!localStorage.getItem("breakCheck")) localStorage.setItem("breakCheck", "0")
 if(!localStorage.getItem("timeCheck")) localStorage.setItem("timeCheck", "0")
-
-if(localStorage.getItem("font") === "Red Hat"){
-  console.log(61)
-  //document.getElementById("Red Hat").checked = true
-}else if(localStorage.getItem("font") ==="Roboto"){
-  console.log(62)
-  //document.getElementById("Roboto").checked = true
-}else if(localStorage.getItem("font") === "Verdana"){
-  console.log(63)
-  //document.getElementById("Boutique").checked = true
-}else if(!localStorage.getItem("font")){
-  console.log(64)
-  //document.getElementById("Red Hat").checked = true
-  localStorage.setItem("font", "Red Hat")
-}
 
 try{
   if(localStorage.getItem("classCheck") === "1") document.getElementById("className").checked = true;
