@@ -22,11 +22,12 @@ function daysFrom(date1, date2) {
 	return Math.round((ndate2 - ndate1) / (1000 * 60 * 60 * 24));
 }
 function week() {
-	return (Math.floor((daysFrom(jan1, today) - 3) / 7) % 2) ? 'B' : 'A';
+	return (Math.floor((daysFrom(jan1, today) - 3) / 7) % 2) ? 'A' : 'B';
 	// this is fragile
 	// but the week a b system is fucked anyway ...
 	// I'll tell u whats fucked? How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
 }
+console.log(week())
 function timeTil() {
 	return (times[next].timeFrom + today.getTime()) - Date.now();
 }
