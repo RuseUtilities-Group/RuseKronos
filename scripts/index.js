@@ -247,7 +247,7 @@ fetch("https://type.fit/api/quotes")
       return Math.floor (Math.random() * (num - 1 + 1)) + 1;
     }
     const rng1 = rng(1643)
-    document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
+    document.getElementById("quotesBody").innerHTML = `${data[rng1].text} Download the RuseKronos Chrome Extension Today!`
     if(data[rng1].author === null) return
     document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
   });
