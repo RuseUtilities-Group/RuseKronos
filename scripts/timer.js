@@ -1,4 +1,7 @@
 // By Chris Ahn and Ethan Du Toit and Joshua Koh
+if (!localStorage.getItem("personalTimetable")) {
+	window.location.href = "./landing.html"
+}
 let next = 0;
 let jsonPath = 'scripts/';
 let times = [];
