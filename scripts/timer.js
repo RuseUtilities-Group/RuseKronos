@@ -75,7 +75,11 @@ function gen_table(json) {
 		tstr += "</td></tr>";
 		times.push({periodName: k, timeFrom: timeStringToMS(v.startTime)});
 	}
-	table.innerHTML = tstr;
+	try{
+		table.innerHTML = tstr;
+	} catch(error){
+		location.reload(); 
+	}
 	times.sort(function(a, b) {return a.timeFrom - b.timeFrom;});
 }
 function updateDay() {
