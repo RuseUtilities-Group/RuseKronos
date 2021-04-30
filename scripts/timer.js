@@ -1,6 +1,7 @@
 // By Chris Ahn and Ethan Du Toit and Joshua Koh
 if (!localStorage.getItem("personalTimetable")) {
 	window.location.href = "./landing.html"
+	return
 }
 let next = 0;
 let jsonPath = 'scripts/';
@@ -81,6 +82,7 @@ function gen_table(json) {
 	try{
 		table.innerHTML = tstr;
 	} catch(error){
+
 		location.reload(); 
 	}
 	times.sort(function(a, b) {return a.timeFrom - b.timeFrom;});
