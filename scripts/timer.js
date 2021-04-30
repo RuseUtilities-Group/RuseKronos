@@ -81,7 +81,6 @@ function gen_table(json) {
 	try{
 		table.innerHTML = tstr;
 	} catch(error){
-		table.innerHTML = "Classes are Loading...";
 		setTimeout(function() {
 			location.reload(); 
 		  }, 1500);
