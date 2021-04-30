@@ -82,8 +82,9 @@ function gen_table(json) {
 	try{
 		table.innerHTML = tstr;
 	} catch(error){
-
-		location.reload(); 
+		setTimeout(function() {
+			location.reload(); 
+		  }, 1500);
 	}
 	times.sort(function(a, b) {return a.timeFrom - b.timeFrom;});
 }
