@@ -99,13 +99,13 @@
             <div class="theme-switch-wrapper" style="margin-left: 2.5%; margin-top: 0.25%"> 
               <p>Dark Mode</p>
               <label class="theme-switch" for="checkbox" style="margin-left: 3.5%; margin-top: -0.4%;">
-                <input type="checkbox" id="checkbox"/>
+                <input type="checkbox" id="checkbox" checked="false">
                 <div class="slider round"></div>
               </label>
           </div>
             <div style="display: flex; padding: 2.5%; padding-top: 1.75% !important;">
               <p style="margin-top: 1.5%;">Remove and Re-Upload Timetable</p>
-              <button onclick="localStorage.removeItem(`personalTimetable`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
+              <button onclick="localStorage.removeItem(`personalTimetable`); localStorage.removeItem(`theme`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
             </div>
             <div style="padding-top: 2%">
               <a onClick="window.location.href='https://chrome.google.com/webstore/detail/kronos/olhbpdalnokbaabnlodbcefpfbnjioam?authuser=8&hl=en'" class="hereButton" style="padding: 2.5%;">Install Chrome Extension</a>
