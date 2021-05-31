@@ -1,7 +1,23 @@
+:root {
+  --primary-color: black !important;
+  --secondary-color: white;
+  --tertiary-color: rgba(253, 160, 133, 0.9);
+  --bg-color: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+
+[data-theme="dark"] {
+  --primary-color: white !important;
+  --secondary-color: white;
+  --tertiary-color: #343A40;
+  --bg-color: linear-gradient(100deg, #303030, #252525);
+}
+
 body{
   font-family: "Red Hat Text";
-  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  background-image: var(--bg-color);
   min-height:  100vh;
+  color: var(--primary-color) !important;
 }
 
 #timetable{
@@ -17,11 +33,12 @@ body{
 }
 #insight{
   border-radius: 15px;
-  border: thick rgba(253, 160, 133, 0.9);
-  background-color: rgba(253, 160, 133, 0.9);
+  border: thick var(--tertiary-color);
+  background-color: var(--tertiary-color);
   padding-top: 5%;
   padding-left: 5%;
   width: 77.25% !important;
+  color: var(--primary-color) !important;
 }
 
 #rightSide{
@@ -58,7 +75,8 @@ body{
 
 
 #todaysClasses{
-  padding-top: 5%
+  padding-top: 5%;
+  color: var(--primary-color) !important;
 }
 #quoteContainer{
   color: white;
@@ -324,4 +342,65 @@ select {
   position: absolute !important;
   top: 10% !important;
   left: 17.5% !important;
+}
+
+/* The Slider Switch for Theme Change on Settings.Html*/
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  
+
+    margin-left: 650px;
+    margin-top: 50px;
+    font-size: 1rem;
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #111111;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

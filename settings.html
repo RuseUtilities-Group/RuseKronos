@@ -90,17 +90,24 @@
             </div>
             <div style="display: flex; padding: 2.5%;">
               <p>Show Class Codes</p>
-              <input id="className" type="checkbox" style="margin-left: 3%; margin-top: -1.5%" onclick="classNameFunc()">
+              <input id="className" type="checkbox" style="margin-left: 3%; margin-top: -0.825%" onclick="classNameFunc()">
               <p style=" margin-left: 7.5%;">Show Breaks</p>
-              <input id="showBreaks" type="checkbox" style="margin-left: 3%; margin-top: -1.5%" onclick="breaksShowFunc()">
+              <input id="showBreaks" type="checkbox" style="margin-left: 3%; margin-top: -0.825%" onclick="breaksShowFunc()">
               <p style=" margin-left: 7.5%;">Show Timings</p>
-              <input id="showTimings" type="checkbox" style="margin-left: 3%; margin-top: -1.5%" onclick="timingsShowFunc()">
+              <input id="showTimings" type="checkbox" style="margin-left: 3%; margin-top: -0.825%" onclick="timingsShowFunc()">
             </div>
-            <div style="display: flex; padding: 2.5%; padding-top: 1% !important;">
+            <div class="theme-switch-wrapper" style="margin-left: 2.5%; margin-top: 0.25%"> 
+              <p>Dark Mode</p>
+              <label class="theme-switch" for="checkbox" style="margin-left: 3.5%; margin-top: -0.4%;">
+                <input type="checkbox" id="checkbox"/>
+                <div class="slider round"></div>
+              </label>
+          </div>
+            <div style="display: flex; padding: 2.5%; padding-top: 1.75% !important;">
               <p style="margin-top: 1.5%;">Remove and Re-Upload Timetable</p>
               <button onclick="localStorage.removeItem(`personalTimetable`); window.location.href='./upload.html'" style="margin-left: 5%;">Erase Timetable</button>
             </div>
-            <div style="padding-top: 2.5%">
+            <div style="padding-top: 2%">
               <a onClick="window.location.href='https://chrome.google.com/webstore/detail/kronos/olhbpdalnokbaabnlodbcefpfbnjioam?authuser=8&hl=en'" class="hereButton" style="padding: 2.5%;">Install Chrome Extension</a>
               <a onClick="window.location.href='https://docs.google.com/document/d/1fpUa5cejrnxtDrJ97kbghI2EbX5SEvO0HF-EO0ja0r4/edit'" class="hereButton" style="padding: 2.5%;">Set Dashboard As New Tab</a>
               <a onClick="window.location.href='https://forms.gle/uG4R62sq4vCkLz1z6'" class="hereButton" style="padding: 2.5%;">Feedback</a>
@@ -126,5 +133,6 @@
 
     </div>
           <script src="/scripts/index.js"></script>
+          <script src="/scripts/settingsTheme.js"></script>
 	</body>
 </html>
