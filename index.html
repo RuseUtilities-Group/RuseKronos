@@ -28,6 +28,14 @@
           if (!localStorage.getItem("personalTimetable")) {
               window.location.href = "./landing.html"
           }
+          function visibilitychange(){
+            if (document.hidden) {
+            document.title = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
+            } else {
+            document.title = "Dashboard";
+            }
+          }
+          window.addEventListener('visibilitychange', handleTabChange);
 	      </script>
     </head>
     <body onload="startTime()">
