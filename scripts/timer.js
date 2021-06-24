@@ -6,7 +6,7 @@
 //	document.title = "Dashboard";
 //	}
 //  }
-window.addEventListener('visibilitychange', handleTabChange);
+//window.addEventListener('visibilitychange', handleTabChange);
 if (!localStorage.getItem("personalTimetable")) {
 	window.location.href = "./landing.html"
 }
