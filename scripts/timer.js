@@ -1,11 +1,11 @@
 // By Chris Ahn and Ethan Du Toit and Joshua Koh
-function visibilitychange(){
-	if (document.hidden) {
-	document.title = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
-	} else {
-	document.title = "Dashboard";
-	}
-  }
+//function visibilitychange(){
+//	if (document.hidden) {
+//	document.title = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
+//	} else {
+//	document.title = "Dashboard";
+//	}
+//  }
 window.addEventListener('visibilitychange', handleTabChange);
 if (!localStorage.getItem("personalTimetable")) {
 	window.location.href = "./landing.html"
@@ -122,11 +122,7 @@ function update(json) {
 	}
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	console.log(timeTilHMS())
-	if (document.hidden) {
 	document.title = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
-	} else {
-	document.title = "Dashboard";
-	}
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";
 	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
