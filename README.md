@@ -1,4 +1,4 @@
-# ![Kronos Logo](https://rusekronos.xyz/styles/images/kronosicon.png) RuseKronos
+# RuseKronos
 A new design for RuseKronos, Version 2 - Made by Joshua Koh and Yurui Zi + Ethan Du Toit & Chris Ahn
 For the old version, please see the Kronos Repo.
 #### Stable Version: FR v2.1.0
@@ -33,6 +33,7 @@ Logo Design: Jimmy Liang
 
 Students of James Ruse Agricultural High School
 
+![Kronos Logo](https://rusekronos.xyz/styles/images/kronosicon.png) 
 
 RuseKronos- A student organiser designed for JRAHS's students and teachers, notifying when to go to class or go to break.
 
