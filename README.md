@@ -1,4 +1,4 @@
-# RuseKronos
+# ![Kronos Logo](https://rusekronos.xyz/styles/images/kronosicon.png) RuseKronos
 A new design for RuseKronos, Version 2 - Made by Joshua Koh and Yurui Zi + Ethan Du Toit & Chris Ahn
 For the old version, please see the Kronos Repo.
 #### Stable Version: FR v2.1.0
@@ -14,8 +14,6 @@ Chrome Extension: https://chrome.google.com/webstore/detail/kronos/olhbpdalnokba
 Firefox Addon: https://rusekronos.xyz/firefoxExtension.xpi
 
 Legal + Terms of Service: https://rusekronos.xyz/legal.html
-
-![Kronos Logo](https://rusekronos.xyz/styles/images/kronosicon.png)
 
 Contact: ruseutilitiesgroup@gmail.com
 Instagram: ruse_utilities_group
