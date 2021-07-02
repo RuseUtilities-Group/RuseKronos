@@ -231,7 +231,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&AP
   var imageLogo = data.weather[0].icon;
 
   var link = `https://openweathermap.org/img/wn/${imageLogo}@2x.png`
-  console.log(imageLogo)
+  //console.log(imageLogo)
   document.getElementById("weatherLogo").src = link;
   document.getElementById("currentTemp").innerHTML = `${currentTemp}°`
 

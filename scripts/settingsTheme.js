@@ -6,7 +6,9 @@ if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
   
     if (currentTheme === 'dark') {
-        toggleSwitch.checked = false;
+        try{
+            toggleSwitch.checked = false;
+        } catch {}
     }
 }
 
@@ -19,5 +21,6 @@ function switchTheme(e) {
           localStorage.setItem('theme', 'dark');
     }    
 }
-
-toggleSwitch.addEventListener('change', switchTheme, false);
+try{
+    toggleSwitch.addEventListener('change', switchTheme, false);
+} catch {}

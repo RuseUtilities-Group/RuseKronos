@@ -38,7 +38,7 @@ function week() {
 	// but the week a b system is fucked anyway ...
 	// I'll tell u whats fucked? How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
 }
-console.log(week())
+//console.log(week())
 function timeTil() {
 	return (times[next].timeFrom + today.getTime()) - Date.now();
 }
@@ -64,7 +64,7 @@ function gen_table(json) {
 	tstr = "";
 	it = json.timetableData[dateNamesTo[day()].toLowerCase() + week()];
 	if (it === undefined) {
-		console.log ("Uh oh");
+		//console.log ("Uh oh");
 		it = {};
 	}
 	for(var [k, v] of Object.entries(it)) {
@@ -73,7 +73,7 @@ function gen_table(json) {
 		tstr += "<tr><td id=\"time1\">";
 		if(v.room == "Sport"){
 			tstr += `<div class="timeSubtext">${k1}: Sport</div>`
-		}else if(localStorage.getItem("breakCheck") === "1" &&  (v.room === "Recess"|| v.room === "Lunch"||v.room === "End of Day"||v.room === "Assembly"))  tstr += `<div class="timeSubtext">${v.room}- ${v.startTime}<div>`;
+		}else if(localStorage.getItem("breakCheck") === "1" &&  (v.room === "Recess"|| v.room === "Lunch"||v.room === "End of Day"||v.room === "Assembly"))  tstr += `<div class="timeSubtext">${v.room} - ${v.startTime}<div>`;
 		else if(v.room === "Recess"||v.room === "Lunch"||v.room === "End of Day"||v.room === "Assembly");
 		else if(localStorage.getItem("timeCheck") === "1" && addDetails && v.room != ""){
 			if(localStorage.getItem("classCheck") === "1") tstr += `<div class="timeSubtext">${k1}: ${v.class1} with ${v.teacher} at ${v.room} - ${v.startTime}<div>`;
@@ -111,6 +111,7 @@ function moveDay(json) {
 }
 function update(json) {
 	var extraPeriod;
+	var subject;
 	periodCountdown = document.getElementById("periodCountdown")
 	periodInfo = document.getElementById("periodInfo")
 	period = document.getElementById("period");
@@ -123,19 +124,38 @@ function update(json) {
 	}
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	//console.log(timeTilHMS())
-	
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";
-	period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
-	if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport")  extraPeriod = "Sport";
-	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch") extraPeriod= "Lunch";
-	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Recess") extraPeriod = "Recess";
-	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "End of Day") extraPeriod = "End of Day";
-	else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Assembly") extraPeriod = "Assembly";
-	else if(localStorage.getItem("classCheck") === "1") extraPeriod = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].class1} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
-	else extraPeriod = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
-	periodInfo.innerHTML = extraPeriod;
-	document.title = `${extraPeriod} in ${timeTilHMS()}`;
+	try{
+		period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
+		if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport"){
+			extraPeriod = "Sport";
+			subject = "Sport";
+		} else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Lunch"){
+			extraPeriod = "Lunch";
+			subject = "Lunch";
+		} else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Recess"){
+			extraPeriod = "Recess";
+			subject = "Recess";
+		} else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "End of Day"){
+			extraPeriod = "End of Day";
+			subject = "End of Day";
+		} else if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Assembly"){
+			extraPeriod = "Assembly";
+			subject = "Assembly";
+		}
+		else if(localStorage.getItem("classCheck") === "1"){
+			extraPeriod = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].class1} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
+			subject = json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].class1
+		} else{
+			extraPeriod = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} with ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].teacher}<br>in Room ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room}`
+			subject = json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject
+		}
+		periodInfo.innerHTML = extraPeriod;
+		setInterval(function(){
+			document.querySelector('title').textContent = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
+		}, 1000);
+	} catch{}
 }
 let xhr = new XMLHttpRequest();
 xhr.responseType = 'json';
