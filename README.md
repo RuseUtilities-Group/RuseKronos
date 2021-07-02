@@ -19,7 +19,7 @@ Contact: ruseutilitiesgroup@gmail.com
 Instagram: ruse_utilities_group
 
 
-Made By TheRuse Utilities Group
+Made By The RuseUtilities Group
 
 Our Team:
 
