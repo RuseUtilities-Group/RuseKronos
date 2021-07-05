@@ -153,7 +153,7 @@ function update(json) {
 		}
 		periodInfo.innerHTML = extraPeriod;
 		setInterval(function(){
-			document.querySelector('title').textContent = `${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].subject} in ${timeTilHMS()}`;
+			document.querySelector('title').textContent = `${subject} in ${timeTilHMS()}`;
 		}, 1000);
 	} catch{}
 }
