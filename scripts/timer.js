@@ -155,6 +155,8 @@ function update(json) {
 		setInterval(function(){
 			document.querySelector('title').textContent = `${subject} in ${timeTilHMS()}`;
 		}, 1000);
+
+		if(timeTilHMS() === "00:00:00") location.reload();
 	} catch{}
 }
 let xhr = new XMLHttpRequest();
