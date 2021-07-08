@@ -124,6 +124,7 @@ function update(json) {
 	}
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	//console.log(timeTilHMS())
+	if(tt <= 1000) location.reload();
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";
 	try{
@@ -155,8 +156,6 @@ function update(json) {
 		setInterval(function(){
 			document.querySelector('title').textContent = `${subject} in ${timeTilHMS()}`;
 		}, 1000);
-
-		if(timeTilHMS() === "00:00:00") location.reload();
 	} catch{}
 }
 let xhr = new XMLHttpRequest();

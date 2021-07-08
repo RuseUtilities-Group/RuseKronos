@@ -1,29 +1,28 @@
 :root {
   --primary-color: black !important;
   --secondary-color: white;
-  --tertiary-color: rgba(253, 160, 133, 0.9);
-  --bg-color: linear-gradient(120deg, #f6d365, #fda085);
+  --tertiary-color: rgba(241, 110, 70, 0.5);
+  --quad-color: rgba(241, 110, 70, 0.6);
+  --bg-color: linear-gradient(110deg, #ebcb8b, #bf616a);
 }
 
 
 [data-theme="dark"] {
   --primary-color: white !important;
   --secondary-color: white;
-  --tertiary-color: #343A40;
-  --bg-color: linear-gradient(100deg, #303030, #252525);
+  --tertiary-color: rgba(46, 52, 64, 0.5);
+  --bg-color: linear-gradient(100deg, #434c5e, #2e3440);
 }
 
 body{
-  font-family: "Red Hat Text";
+  font-family: "Red Hat Text" !important;
   background-image: var(--bg-color);
   min-height:  100vh;
   color: var(--primary-color) !important;
 }
 
-#timetable{
-  position: absolute;
-  top: 15%;
-  left: 2%;
+#navbar{
+  font-family: "Red Hat Text" !important;
 }
 
 .kronosTimer{
@@ -44,8 +43,8 @@ body{
 #rightSide{
   position: absolute;
   border-radius: 15px;
-  border: thick rgba(253, 160, 133, 0.9);
-  background-color: rgba(253, 160, 133, 0.9);
+  border: thick rgba(241, 110, 70, 0.5);
+  background-color: rgba(241, 110, 70, 0.5);
   width: 35%;
   margin-left: 60%;
   margin-top: 15.5%;
@@ -67,8 +66,8 @@ body{
   color: white;
   position: absolute;
   border-radius: 10px;
-  border: thick orangered;
-  background-color: orangered;
+  border: thick rgba(241, 110, 70, 0.7);
+  background-color: rgba(241, 110, 70, 0.7);
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -149,13 +148,13 @@ form input, form button{
 }
 
 form button{
-  color: #d88771;
+  color: rgba(241, 110, 70, 1);
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #d88771;
+  background: rgba(241, 110, 70, 1);
   color: white;
 }
 .todo-container {
@@ -236,7 +235,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: rgba(241, 110, 70, 1);
   cursor: pointer;
   width: 12rem;
 }
@@ -247,13 +246,12 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
-  cursor: pointer;
+  background: rgba(241, 110, 70);
   pointer-events: none;
 }
 
 .hereButton:hover{
-  color: orangered;
+  color: rgba(241, 110, 70, 1);
 }
 
 .icon-scroll,
@@ -403,4 +401,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#timetable tr{
+  border: 1px solid var(--primary-color);
+  vertical-align: top;
+  
+}
+
+#timetable td{
+  border: 1px solid var(--primary-color);
+  width: 1% !important;
+  padding: 10px;
 }
