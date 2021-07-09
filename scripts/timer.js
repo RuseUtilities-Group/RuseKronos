@@ -10,6 +10,7 @@
 if (!localStorage.getItem("personalTimetable")) {
 	window.location.href = "./landing.html"
 }
+var audio = new Audio("./scripts/bell.mp3");
 let next = 0;
 let jsonPath = 'scripts/';
 let times = [];
@@ -124,6 +125,7 @@ function update(json) {
 	}
 	periodCountdown.innerHTML = `${timeTilHMS()}`
 	//console.log(timeTilHMS())
+	if(tt <= 10000 && localStorage.getItem("alarmCheck") === "1") audio.play();
 	if(tt <= 1000) location.reload();
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";

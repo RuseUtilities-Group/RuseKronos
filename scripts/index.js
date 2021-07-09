@@ -29,6 +29,8 @@ try{
   if(localStorage.getItem("breakCheck") === "0") document.getElementById("showBreaks").checked = false;
   if(localStorage.getItem("timeCheck") === "1") document.getElementById("showTimings").checked = true;
   if(localStorage.getItem("timeCheck") === "0") document.getElementById("showTimings").checked = false;
+  if(localStorage.getItem("alarmCheck") === "1") document.getElementById("alarmck").checked = true;
+  if(localStorage.getItem("alarmCheck") === "0") document.getElementById("alarmck").checked = false
   var chk = document.getElementById("className").checked;
   if(chk == true) localStorage.setItem("classCheck", "1")
   if(chk == false) localStorage.setItem("classCheck", "0")
@@ -38,6 +40,9 @@ try{
   var chk2 = document.getElementById("showTimings").checked;
   if(chk2 == true) localStorage.setItem("timeCheck", "1")
   if(chk2 == false) localStorage.setItem("timeCheck", "0")
+  var chk3 = document.getElementById("alarmck").checked;
+  if(chk3 == true) localStorage.setItem("alarmCheck", "1")
+  if(chk3 == false) localStorage.setItem("alarmCheck", "0")
   document.getElementById("nameInput").placeholder = name1;
   document.getElementById("weatherInput").placeholder = city;
 
@@ -75,6 +80,12 @@ function weatherInputFunc() {
   localStorage.setItem("weather", Name);
   city = Name
   document.getElementById("weatherInput").placeholder = city;
+}
+
+function bellsFunc(){
+  var chk = document.getElementById("alarmck").checked;
+  if(chk == true) localStorage.setItem("alarmCheck", "1")
+  if(chk == false) localStorage.setItem("alarmCheck", "0")
 }
 
 //Select DOM
