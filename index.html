@@ -15,6 +15,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./styles/images/kronosicon.png" type="image/icon type">
 
+        <script>
+          if (localStorage.getItem("personalTimetable") == null) {
+              window.location.href = "./landing.html"
+          }
+        </script>
         <link rel="manifest" href="./manifest.webmanifest">
         <link rel=preconnect href="https://cdnjs.cloudflare.com">
         <link rel="stylesheet" href="./styles/main.css">

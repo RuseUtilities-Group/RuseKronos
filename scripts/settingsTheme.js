@@ -1,7 +1,4 @@
 // By Joshua Koh
-if (localStorage.getItem("personalTimetable") == null) {
-    window.location.href = "./landing.html"
-}
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
