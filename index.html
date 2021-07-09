@@ -1,9 +1,11 @@
 <!--By Joshua Koh, Ethan Du Toit, Yurui Zi-->
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
     <head>
         <title>Dashboard</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="RuseKronos is a utility designed for teachers and students at James Ruse Agricultural High School and offers ergonomic, sleek and responsive user interface designs and new features. Access a minimalistic dashboard or a staff email list or the school calendar as well as links to sentral straight from any page. Customise colours appearance and personalise the website in settings with ease.">
         <meta property="og:image" content="./styles/images/kronosImagePreview.png">
         <meta name="keywords" content="RuseKronos, Kronos, Bell Times, Ruse, James Ruse Agricultural High School, James Ruse, James Ruse A.H.S, JRAHS, RuseUtilities Group">
         <meta property="og:title" content="RuseKronos">
@@ -12,23 +14,17 @@
         <meta name="author" content="RuseUtilities Group">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./styles/images/kronosicon.png" type="image/icon type">
+
+        <link rel="manifest" href="./manifest.webmanifest">
+        <link rel=preconnect href="https://cdnjs.cloudflare.com">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="/scripts/settingsTheme.js"></script>
+        <script src="./scripts/settingsTheme.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="/scripts/ical.js"></script>
-        <script src="/scripts/clock.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!--link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet"-->
-        <script>
-          if (!localStorage.getItem("personalTimetable")) {
-              window.location.href = "./landing.html"
-          }
-	      </script>
     </head>
     <body onload="startTime()">
       <div id="body1">
@@ -54,7 +50,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
                 Info
               </a>
               <div class="dropdown-menu">
@@ -78,7 +74,7 @@
             <p><span id="timer"></span></p>
           </div>
           <div id="todaysClasses">
-            <h3 style="font-size: 32.5px" id="classTitle">TODAY'S CLASSES</h3>
+            <h2 style="font-size: 32.5px" id="classTitle">TODAY'S CLASSES</h2>
             <table id="times" style="font-size: 22.5px">
             </table>
           </div>
@@ -87,7 +83,7 @@
         <br>
         <div id="info">
           <div id="weatherContainer">
-            <img id="weatherLogo">
+            <img id="weatherLogo" alt="`">
             <p id="currentTemp"></p>
           </div>
           <div id="greetingDiv">
@@ -102,8 +98,9 @@
           </div>
           <div class="TodoListClass">
               <form>
-                  <input type="text" class="todo-input" />
-                  <button class="todo-button" type="submit">
+                  <label for="todo-input" style="display:none;">yurui is bad</label>
+                  <input type="text" id="todo-input" class="todo-input" />
+                  <button aria-label="Submit Todo" class="todo-button" type="submit">
                   <i class="fas fa-plus-square"></i>
                   </button>
                   <div class="select">

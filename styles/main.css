@@ -15,7 +15,7 @@
 }
 
 body{
-  font-family: "Red Hat Text" !important;
+  font-family: "Red Hat Text", Arial, Helvetica, sans-serif !important;
   background-image: var(--bg-color);
   min-height:  100vh;
   color: var(--primary-color) !important;
@@ -23,6 +23,11 @@ body{
 
 #navbar{
   font-family: "Red Hat Text" !important;
+  color: #FFFF !important;
+}
+
+.nav-link{
+  color: #FFFF !important;
 }
 
 .kronosTimer{
