@@ -30,7 +30,7 @@ function getTemplate() {
 	return new Promise((resolve, reject) => {
 		let xhr = new XMLHttpRequest();
 		xhr.responseType = 'json';
-		xhr.open('GET', '/scripts/coronabellTimes.json', true);
+		xhr.open('GET', '/scripts/coronaBellTimes.json', true);
 		xhr.onloadend = function (e) {
 			resolve(xhr.response);
 		};
