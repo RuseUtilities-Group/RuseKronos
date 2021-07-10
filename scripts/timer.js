@@ -37,8 +37,31 @@ function week() {
 	return (Math.floor((daysFrom(jan1, today) - 3) / 7) % 2) ? 'A' : 'B';
 	// this is fragile
 	// but the week a b system is fucked anyway ...
-	// I'll tell u whats fucked? How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
+	// How fragile this code is... You have to change the - 3 thingy every year coz the year off sets all the time
 }
+
+function ordinal_suffix_of(i) {
+    var j = i % 10,
+        k = i % 100;
+    if (j == 1 && k != 11) {
+        return i + "st";
+    }
+    if (j == 2 && k != 12) {
+        return i + "nd";
+    }
+    if (j == 3 && k != 13) {
+        return i + "rd";
+    }
+    return i + "th";
+}
+
+var dateElement = document.getElementById("date");
+const d = new Date();
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+dateElement.innerHTML = `${days[d.getDay()]} ${week()}, ${ordinal_suffix_of(d.getDate())} of ${months[d.getMonth()]}, ${d.getFullYear()}`
+
+
 //console.log(week())
 function timeTil() {
 	return (times[next].timeFrom + today.getTime()) - Date.now();

@@ -86,7 +86,7 @@ body{
   color: white;
   text-align: right;
   position: absolute;
-  top: 37.5%;
+  top: 40%;
   right: 2%;
   width: 40%
 }
@@ -103,7 +103,7 @@ body{
 
 .TodoListClass{
 position: absolute;
-top: 60%;
+top: 62.5%;
 right: 0%;
 zoom: 0.85;
 -moz-transform: scale(0.85);
@@ -116,13 +116,13 @@ top: 24.5%;
 right: 2%;
 color: #ffff;
 font-size: 100%;
-padding: 20px;
+padding-top: 20px;
 }
 
 #weatherContainer{
 position: absolute;
 top: 9%;
-right: 7.5%;
+right: 4.5%;
 padding: auto;
 }
 
@@ -131,7 +131,7 @@ color: white;
 font-size: 250%;
 position: absolute;
 left: 100%;
-top: 15%;
+top: 18%;
 }
 
 #time{
