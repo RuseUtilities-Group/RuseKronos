@@ -31,13 +31,13 @@ function gen_table(json) {
 
 			if(startTime.startsWith("9") || startTime.startsWith("8")) startTime = "0" + startTime
 
-			if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
-				startTime = it[listOfDays[day]]["Recess"].startTime;
-				tableIn += `<tr><td style="padding-left: 14px;">Recess</td>`;
-				tableIn += `<td id="startTimeTd" style="padding-left: 7px"></td>`;
-				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
-				tableIn += "</tr>";
-			}
+			//if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
+			//	startTime = it[listOfDays[day]]["Recess"].startTime;
+			//	tableIn += `<tr><td style="padding-left: 14px;">Recess</td>`;
+			//	tableIn += `<td id="startTimeTd" style="padding-left: 7px"></td>`;
+			//	tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
+			//	tableIn += "</tr>";
+			//}
 			if((day % 5 != 2 && period == 5) || (day % 5 == 2 && period == 4)) {
 				startTime = it[listOfDays[day]]["Lunch"].startTime;
 				tableIn += `<tr><td style="padding-left: 14px;">Lunch</td>`;

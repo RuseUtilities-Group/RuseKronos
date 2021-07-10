@@ -1,0 +1,878 @@
+{
+    "timetableData": {
+    
+    "mondayA":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    
+    },
+    
+    "tuesdayA":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "wednesdayA":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "thursdayA":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    
+    },
+    
+    "fridayA":{ 
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "mondayB":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "tuesdayB":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "wednesdayB":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "thursdayB":{
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    },
+    
+    "fridayB":{ 
+        "Period 1":{
+            "name": "Period 1",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "09:00",
+            "periodLength": "45"
+        },
+        "Transition 1":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "09:45",
+            "periodLength": "15"
+        },
+        "Period 2":{
+            "name": "Period 2",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "10:00",
+            "periodLength": "45"
+        },
+    
+        "Transition 2":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "10:45",
+            "periodLength": "15"
+        },
+    
+        "Period 3":{
+            "name": "Period 3",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "11:00",
+            "periodLength": "45"
+        },
+    
+        "Lunch":{
+            "subject": "",
+            "room": "Lunch",
+            "teacher": "",
+            "startTime": "11:45",
+            "periodLength": "75"
+        },
+
+        "Period 4":{
+            "name": "Period 4",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "13:00",
+            "periodLength": "45"
+        },
+
+        "Transition 3":{
+            "name": "",
+            "subject": "",
+            "room": "Transition",
+            "teacher": "",
+            "startTime": "13:45",
+            "periodLength": "15"
+        },
+    
+        "Period 5":{
+            "name": "Period 5",
+            "subject": "",
+            "room": "",
+            "teacher": "",
+            "startTime": "14:00",
+            "periodLength": "45"
+        },
+    
+        "End of Day":{
+            "subject": "",
+            "room": "End of Day",
+            "teacher": "",
+            "startTime": "14:45"
+        }
+    
+    }
+    
+    }}
+    
