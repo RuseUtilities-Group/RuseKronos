@@ -1,7 +1,7 @@
 # RuseKronos
 A new design for RuseKronos, Version 2 - Made by Joshua Koh and Yurui Zi + Ethan Du Toit & Chris Ahn
 For the old version, please see the Kronos Repo.
-#### Stable Version: FR v2.1.0
+#### Stable Version: FR v2.1.5
 
 A student organiser designed for JRAHS's students and teachers, notifying when to go to class or go to break, bringing important and useful functions all in one ergonomic website. 
 
