@@ -87,7 +87,7 @@ function bellsFunc(){
   if(chk == true) localStorage.setItem("alarmCheck", "1")
   if(chk == false) localStorage.setItem("alarmCheck", "0")
 }
-
+/*
 //Select DOM
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
@@ -229,7 +229,7 @@ function getTodos() {
     todoList.appendChild(todoDiv);
   });
 }
-
+*/
 //Adding Clock to the Website
 function startTime() {
   var today = new Date();
