@@ -40,13 +40,13 @@ function gen_table(json) {
 			//	tableIn += `<td id="startTimeTd" style="padding-left: 7px">${startTime}</td>`;
 			//	tableIn += "</tr>";
 			//}
-			if((day % 5 != 2 && period == 4) || (day % 5 == 2 && period == 4)) {
+			if((day % 5 != 2 && period == 5) || (day % 5 == 2 && period == 4)) {
 				tableIn += `<tr><td style="padding-left: 14px;">Lunch</td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px"></td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${it[listOfDays[day]]["Lunch"].startTime}</td>`;
 				tableIn += "</tr>";
 			}
-			if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
+			if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 3)) {
 				tableIn += `<tr><td style="padding-left: 14px;">Recess</td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px"></td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${it[listOfDays[day]]["Recess"].startTime}</td>`;
