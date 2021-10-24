@@ -153,7 +153,7 @@ function update(json) {
 	if(tt > 118200000)  document.getElementById("classTitle").innerHTML = "MONDAY'S CLASSES";
 	else if(tt > 31800000) document.getElementById("classTitle").innerHTML = "TOMORROW'S CLASSES";
 	try{
-		period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime}`;
+		period.innerHTML = `Next Event at ${json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].startTime} in`;
 		if(json.timetableData[dateNamesTo[day()].toLowerCase() + week()][times[next].periodName].room === "Sport"){
 			extraPeriod = "Sport";
 			subject = "Sport";
