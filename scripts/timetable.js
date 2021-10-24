@@ -46,12 +46,12 @@ function gen_table(json) {
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${it[listOfDays[day]]["Lunch"].startTime}</td>`;
 				tableIn += "</tr>";
 			}
-			/*if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
+			if((day % 5 != 2 && period == 3) || (day % 5 == 2 && period == 2)) {
 				tableIn += `<tr><td style="padding-left: 14px;">Recess</td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px"></td>`;
 				tableIn += `<td id="startTimeTd" style="padding-left: 7px">${it[listOfDays[day]]["Recess"].startTime}</td>`;
 				tableIn += "</tr>";
-			}*/
+			}
 			if(teacher !== "") {
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">P${period}: ${subject} <br></td>`;
 			}
