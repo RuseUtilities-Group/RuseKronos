@@ -30,7 +30,7 @@ function getTemplate() {
 	return new Promise((resolve, reject) => {
 		let xhr = new XMLHttpRequest();
 		xhr.responseType = 'json';
-		xhr.open('GET', '/scripts/coronaBellTimes.json', true);
+		xhr.open('GET', '/scripts/bellTimes.json', true);
 		xhr.onloadend = function (e) {
 			resolve(xhr.response);
 		};
@@ -170,7 +170,7 @@ async function icalProcess() {
 				console.log("what")
 			}
 
-			//jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].startTime = `${hours-1}:${minute.toString().padStart(2, '0')}`;
+			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].startTime = `${hours-1}:${minute.toString().padStart(2, '0')}`;
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].periodLength = (Math.abs(periodEnd - periodStart) / (1000 * 60)).toString();
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].teacher = teacher;
 			jsonData.timetableData[listOfDays[curDay%10]][`Period ${period}`].subject = subject;

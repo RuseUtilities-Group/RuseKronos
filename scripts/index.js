@@ -272,9 +272,11 @@ fetch("https://type.fit/api/quotes")
       return Math.floor (Math.random() * (num - 1 + 1)) + 1;
     }
     const rng1 = rng(1643)
-    document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
-    if(data[rng1].author === null) return
-    document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
+    //document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
+    document.getElementById("quotesBody").innerHTML = `To revert to normal bell times, please reupload your timetable.`
+    //if(data[rng1].author === null) return
+    //document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
+    document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
   });
 
   //Greeting
