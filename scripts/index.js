@@ -273,10 +273,10 @@ fetch("https://type.fit/api/quotes")
     }
     const rng1 = rng(1643)
     //document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
-    document.getElementById("quotesBody").innerHTML = `You have no friends`
+    document.getElementById("quotesBody").innerHTML = `What happens in the dark, always comes to light.`
     //if(data[rng1].author === null) return
     //document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
-    document.getElementById("quotesAuthor").innerHTML = `- Yurui Zi`
+    document.getElementById("quotesAuthor").innerHTML = `- Dhar Mann`
   });
 
   //Greeting
