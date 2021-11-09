@@ -88,7 +88,11 @@ async function icalProcess() {
 		for(var i = 0; i < events.length; i++) {
 			var description = events[i].getFirstPropertyValue('description');
 			var tAndP = description.split("\n");
-			var period = parseInt(tAndP[1].split(" p.")[1], 10);
+			try{
+				var period = parseInt(tAndP[1].split("")[1], 10);
+			} catch(e){ 
+				period = parseInt(tAndP[0].split("")[1], 10);
+			}	
 			if (isNaN(period)) {
 				continue;
 			}
@@ -133,12 +137,17 @@ async function icalProcess() {
 
 			//Dealing with the description elements
 			var tAndP = description.split("\n");
-			var teacherTitle = tAndP[0].split(" ")[1];
-			var teacherFirstName = tAndP[0].split(" ")[2];
-			var teacherLastName = tAndP[0].split(" ")[3];
-			var teacher = teacherTitle + " " + teacherLastName.charAt(0).toUpperCase() + teacherLastName.slice(1).toLowerCase(); ;
-			var period = parseInt(tAndP[1].split(": ")[1], 10);
-
+			console.log(tAndP[0].split(" ")[0]);
+			if(tAndP[0].split(" ")[0] !== "Period:"){
+				var teacherTitle = tAndP[0].split(" ")[1];
+				var teacherFirstName = tAndP[0].split(" ")[2];
+				var teacherLastName = tAndP[0].split(" ")[3];
+				var teacher = teacherTitle + " " + teacherLastName.charAt(0).toUpperCase() + teacherLastName.slice(1).toLowerCase();
+				var period = parseInt(tAndP[1].split(": ")[1], 10);
+			} else{
+				var teacher =  summary.split(": ")[0];
+				var period = parseInt(tAndP[0].split(": ")[1], 10);
+			}
 			//Dealing with the summary elements
 			var subject1 = summary.split(": ")[1];
 			var class1 = summary.split(": ")[0];
