@@ -273,10 +273,10 @@ fetch("https://type.fit/api/quotes")
     }
     const rng1 = rng(1643)
     //document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
-    document.getElementById("quotesBody").innerHTML = `Treat others the way you want to be treated.`
+    document.getElementById("quotesBody").innerHTML = `Good Luck HSC Students and Accelerants!`
     //if(data[rng1].author === null) return
     //document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
-    document.getElementById("quotesAuthor").innerHTML = `- Dhar Mann`
+    document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
   });
 
   //Greeting
