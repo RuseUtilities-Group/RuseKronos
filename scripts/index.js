@@ -276,7 +276,7 @@ fetch("https://type.fit/api/quotes")
     //document.getElementById("quotesBody").innerHTML = `To revert to normal bell times, please reupload your timetable.`
     if(data[rng1].author === null) return
     document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
-    document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
+    //document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
   });
 
   //Greeting
