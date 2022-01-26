@@ -79,7 +79,7 @@ async function icalProcess() {
 		//	subject is in .summary
 		//	location is in .location
 
-		var listOfDays = ['tuesdayA', 'wednesdayA', 'thursdayA','fridayA', 'mondayB', 'tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA'];
+		var listOfDays = ['tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA', 'thursdayA','fridayA', 'mondayB'];
 		var curDay = 0;
 
 		var prevPeriod = 0;
