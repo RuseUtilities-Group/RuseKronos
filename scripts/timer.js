@@ -34,7 +34,7 @@ function daysFrom(date1, date2) {
 	return Math.round((ndate2 - ndate1) / (1000 * 60 * 60 * 24));
 }
 function week() {
-	return (Math.floor((daysFrom(jan1, today) - 3) / 7) % 2) ? 'A' : 'B';
+	return (Math.floor((daysFrom(jan1, today) - 2) / 7) % 2) ? 'B' : 'A';
 	// this is fragile
 	// but the week a b system is fucked anyway ...
 	// How fragile this code is... You have to change the - 3 thingy every year coz the year offsets all the time
