@@ -79,7 +79,7 @@ async function icalProcess() {
 		//	subject is in .summary
 		//	location is in .location
 
-		var listOfDays = ['tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA', 'thursdayA','fridayA', 'mondayB'];
+		var listOfDays = ['thursdayA', 'fridayA', 'mondayB', 'tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA'];
 		var curDay = 0;
 
 		var prevPeriod = 0;
@@ -102,7 +102,7 @@ async function icalProcess() {
 					offset = i
 					
 					//Modify the list
-					listOfDays = ['tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA', 'thursdayA', 'fridayA', 'mondayB'];
+					listOfDays = ['thursdayA', 'fridayA', 'mondayB', 'tuesdayB', 'wednesdayB', 'thursdayB', 'fridayB', 'mondayA', 'tuesdayA', 'wednesdayA'];
 					break;
 				}
 			}
