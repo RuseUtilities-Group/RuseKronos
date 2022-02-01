@@ -112,7 +112,7 @@ function gen_table(json) {
 		}else if(addDetails && v.room != "") {
 			if(localStorage.getItem("classCheck") === "1") tstr += `<div class="timeSubtext">${k1}: <b>${v.class1}</b> with ${v.teacher} - ${v.room}<div>`;
 			else if(localStorage.getItem("classCheck") === "0") tstr += `<div class="timeSubtext">${k1}: <b>${v.subject}</b> with ${v.teacher} - ${v.room}<div>`;
-		} else if(v.subject === "Place Holder") tstr += <div class="timeSubtext">${k1}: Sport<div>`;
+		} else if(v.subject === "Place Holder") tstr += `<div class="timeSubtext">${k1}: Sport<div>`;
 		tstr += "</td><td id=\"time2\">";
 		tstr += "</td></tr>";
 		times.push({periodName: k, timeFrom: timeStringToMS(v.startTime)});
