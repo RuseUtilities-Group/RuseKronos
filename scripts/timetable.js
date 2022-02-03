@@ -61,6 +61,9 @@ function gen_table(json) {
 			else if (room === "Scripture"){
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Scripture</td>`
 			}
+			else if (subject === "Place Holder") {
+				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Sports</td>`;
+			}	
 			else {
 				tableIn += `<td id="timetableTd1" style="padding-left: 14px;">Free Period</td>`;
 			}
