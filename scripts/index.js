@@ -273,10 +273,10 @@ fetch("https://type.fit/api/quotes")
     }
     const rng1 = rng(1643)
     document.getElementById("quotesBody").innerHTML = `${data[rng1].text}`
-    //document.getElementById("quotesBody").innerHTML = `To revert to normal bell times, please reupload your timetable.`
+    document.getElementById("quotesBody").innerHTML = `This version of RuseKronos is deprecated. We are starting the move to Version 3!\n To check it out, go to https://dev.rusekronos.xyz/`
     if(data[rng1].author === null) return
     document.getElementById("quotesAuthor").innerHTML = `- ${data[rng1].author}`
-    //document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
+    document.getElementById("quotesAuthor").innerHTML = `- The Dev Team`
   });
 
   //Greeting
